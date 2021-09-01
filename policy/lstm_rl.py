@@ -9,6 +9,13 @@ from crowd_nav.policy.multi_human_rl import MultiHumanRL
 class ValueNetwork1(nn.Module):
     def __init__(self, input_dim, self_state_dim, mlp_dims, lstm_hidden_dim):
         super().__init__()
+        '''
+        input_dim = self.self_state_dim + self.human_state_dim = 6+7
+        global_state -> lstm_hidden_dim = 50
+        mlp(56, mlp_dims)
+        batch_first: If ``True``, then the input and output tensors are provided
+            as (batch, seq, feature)
+        '''
         self.self_state_dim = self_state_dim
         self.lstm_hidden_dim = lstm_hidden_dim
         self.mlp = mlp(self_state_dim + lstm_hidden_dim, mlp_dims)

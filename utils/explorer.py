@@ -39,7 +39,15 @@ class Explorer(object):
             actions = []
             rewards = []
             while not done:
+                # add condition, check robot policy
+                # a2c_model = str(type(self.robot.policy.get_model())) == "<class 'crowd_nav.policy.lstm_ga3c.A2CNet'>"
+                # print("inside explorer:")
+                # # print(a2c_model)
+                # if a2c_model:
+                #     pass
+                # else:
                 action = self.robot.act(ob)
+                # stopped here
                 ob, reward, done, info = self.env.step(action)
                 states.append(self.robot.policy.last_state)
                 actions.append(action)
@@ -66,7 +74,13 @@ class Explorer(object):
             if update_memory:
                 if isinstance(info, ReachGoal) or isinstance(info, Collision):
                     # only add positive(success) or negative(collision) experience in experience set
-                    self.update_memory(states, actions, rewards, imitation_learning)
+                    a2c_model = str(type(self.robot.policy.get_model())) == "<class 'crowd_nav.policy.lstm_ga3c.A2CNet'>"
+                    # print("inside update_mem:")
+                    # print(a2c_model)
+                    if a2c_model:
+                        self.a2c_update_memory(states, actions, rewards, imitation_learning)
+                    else:
+                        self.update_memory(states, actions, rewards, imitation_learning)
 
             cumulative_rewards.append(sum([pow(self.gamma, t * self.robot.time_step * self.robot.v_pref)
                                            * reward for t, reward in enumerate(rewards)]))
@@ -110,6 +124,7 @@ class Explorer(object):
                 else:
                     next_state = states[i + 1]
                     gamma_bar = pow(self.gamma, self.robot.time_step * self.robot.v_pref)
+                    # branch
                     value = reward + gamma_bar * self.target_model(next_state.unsqueeze(0)).data.item()
             value = torch.Tensor([value]).to(self.device)
 
@@ -124,6 +139,41 @@ class Explorer(object):
             #     state = torch.cat([state, padding])
             self.memory.push((state, value))
 
+    def a2c_update_memory(self, states, actions, rewards, imitation_learning=False):
+        if self.memory is None or self.gamma is None:
+            raise ValueError('Memory or gamma value is not set!')
+
+        for i, state in enumerate(states):
+            reward = rewards[i]
+
+            # VALUE UPDATE
+            if imitation_learning:
+                # define the value of states in IL as cumulative discounted rewards, which is the same in RL
+                state = self.target_policy.transform(state)
+                # value = pow(self.gamma, (len(states) - 1 - i) * self.robot.time_step * self.robot.v_pref)
+                value = sum([pow(self.gamma, max(t - i, 0) * self.robot.time_step * self.robot.v_pref) * reward
+                             * (1 if t >= i else 0) for t, reward in enumerate(rewards)])
+            else:
+                if i == len(states) - 1:
+                    # terminal state
+                    value = reward
+                else:
+                    next_state = states[i + 1]
+                    gamma_bar = pow(self.gamma, self.robot.time_step * self.robot.v_pref)
+                    # branch
+                    value = reward + gamma_bar * self.target_model(next_state.unsqueeze(0))[1].data.item()
+            value = torch.Tensor([value]).to(self.device)
+
+            # # transform state of different human_num into fixed-size tensor
+            # if len(state.size()) == 1:
+            #     human_num = 1
+            #     feature_size = state.size()[0]
+            # else:
+            #     human_num, feature_size = state.size()
+            # if human_num != 5:
+            #     padding = torch.zeros((5 - human_num, feature_size))
+            #     state = torch.cat([state, padding])
+            self.memory.push((state, value))
 
 def average(input_list):
     if input_list:

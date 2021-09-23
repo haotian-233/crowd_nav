@@ -1,3 +1,8 @@
+'''
+For experiment purpose, not used in a2c implementation
+'''
+
+
 """
 Reinforcement Learning (A3C) using Pytroch + multiprocessing.
 The most simple implementation for continuous action.

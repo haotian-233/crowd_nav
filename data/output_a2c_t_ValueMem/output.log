@@ -1,0 +1,9 @@
+2021-09-24 00:45:01, INFO: Current git head hash code: %s
+2021-09-24 00:45:01, INFO: Using device: cpu
+2021-09-24 00:45:01, INFO: Policy: LSTM-GA3C w/o pairwise interaction module
+2021-09-24 00:45:01, INFO: human number: 4
+2021-09-24 00:45:01, INFO: Not randomize human's radius and preferred speed
+2021-09-24 00:45:01, INFO: Training simulation: circle_crossing, test simulation: circle_crossing
+2021-09-24 00:45:01, INFO: Square width: 10.0, circle width: 4.0
+2021-09-24 00:45:01, INFO: Current learning rate: 0.010000
+2021-09-24 00:45:54, INFO: TRAIN has success rate: 0.93, collision rate: 0.07, nav time: 11.45, total reward: 0.2757

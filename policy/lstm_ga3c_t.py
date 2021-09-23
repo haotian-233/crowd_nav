@@ -4,6 +4,7 @@ import numpy as np
 import logging
 from crowd_nav.policy.cadrl import mlp
 from crowd_nav.policy.multi_human_rl import MultiHumanRL
+from my_utils import process_state
 
 from crowd_sim.envs.utils.action import ActionRot, ActionXY
 
@@ -76,7 +77,7 @@ class ValueNetwork2(nn.Module):
 class A2CNet(nn.Module):
     def __init__(self, action_dim, lstm_hidden_dim = 50):
         super().__init__()
-
+        self.device = 'cpu'
         self.self_state_dim = 6
         self.human_state_dim = 7
         self.joint_input_dim = self.self_state_dim + self.human_state_dim
@@ -123,16 +124,30 @@ class A2CNet(nn.Module):
         '''
         state shape: [batch_size, human_number (0 is self), input_dim = joint_state_dim + 0]
         '''
-
+        # print("inside lstm_ga3c_t")
         size = state.shape
-        # print("size")
-        # print(size)
         self_state = state[:, 0, :self.self_state_dim]
+
+        # begin est collision time
+        state_temp = torch.zeros(size, dtype=torch.float, device=self.device)
+        for i in range(size[0]):
+            self_state_temp = state[i, 0, :self.self_state_dim]
+            humans_state_temp = state[i, :, :]  # self.self_state_dim
+            state_t = process_state(self_state_temp, humans_state_temp)
+            state_t = torch.tensor(state_t).to(self.device)
+            state_temp[i] = state_t
+
+        human_state = state_temp[:, :, self.self_state_dim:]
+        # end 
+        
         h0 = torch.zeros(1, size[0], self.lstm_hidden_dim)
         c0 = torch.zeros(1, size[0], self.lstm_hidden_dim)
 
+        # print(human_state.shape)
+        # print("proper shape:")
         # print(state[:,1:,-self.human_state_dim:].shape)
-        output, (hn, cn) = self.lstm(state[:,:,-self.human_state_dim:], (h0, c0))
+        output, (hn, cn) = self.lstm(human_state, (h0, c0))
+        # output, (hn, cn) = self.lstm(state[:,1:,-self.human_state_dim:], (h0, c0))
         hn = hn.squeeze(0)
         joint_state = torch.cat([self_state, hn], dim=1)
         values = self.value_net(joint_state)
@@ -140,7 +155,7 @@ class A2CNet(nn.Module):
 
         return logits, values
 
-class LstmGA3C(MultiHumanRL):
+class LstmGA3C_t(MultiHumanRL):
     def __init__(self):
         super().__init__()
         self.name = 'LSTM-GA3C'
@@ -156,7 +171,7 @@ class LstmGA3C(MultiHumanRL):
 
         # set model
         self.model = A2CNet(81,lstm_hidden_dim=50)
-        print("class LstmGA3C: a2c net loaded.")
+        print("class LstmGA3C_t: a2c_t net loaded.")
         # if with_interaction_module:
         #     mlp1_dims = [int(x) for x in config.get('lstm_ga3c', 'mlp1_dims').split(', ')]
         #     self.model = ValueNetwork2(self.input_dim(), self.self_state_dim, mlp1_dims, mlp_dims, global_state_dim)

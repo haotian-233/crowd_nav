@@ -77,7 +77,8 @@ class Explorer(object):
                     a2c_model = str(type(self.robot.policy.get_model())) == "<class 'crowd_nav.policy.lstm_ga3c.A2CNet'>"
                     # print("inside update_mem:")
                     # print(a2c_model)
-                    if a2c_model:
+                    a2c_t_model = str(type(self.robot.policy.get_model())) == "<class 'crowd_nav.policy.lstm_ga3c_t.A2CNet'>"
+                    if a2c_model or a2c_t_model:
                         self.a2c_update_memory(states, actions, rewards, imitation_learning)
                     else:
                         self.update_memory(states, actions, rewards, imitation_learning)

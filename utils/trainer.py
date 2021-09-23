@@ -36,8 +36,10 @@ class Trainer(object):
         # print("inside trainer:")
         a2c_model = str(type(self.model)) == "<class 'crowd_nav.policy.lstm_ga3c.A2CNet'>"
         # print(a2c_model)
+        a2c_t_model = str(type(self.model)) == "<class 'crowd_nav.policy.lstm_ga3c_t.A2CNet'>"
+        # print(a2c_t_model)
 
-        if a2c_model:
+        if a2c_model or a2c_t_model:
             # model is lstm_ga3c
             for epoch in range(num_epochs):
                 epoch_loss = 0
@@ -101,7 +103,8 @@ class Trainer(object):
         losses = 0
         # check model type
         a2c_model = str(type(self.model)) == "<class 'crowd_nav.policy.lstm_ga3c.A2CNet'>"
-        if a2c_model:
+        a2c_t_model = str(type(self.model)) == "<class 'crowd_nav.policy.lstm_ga3c_t.A2CNet'>"
+        if a2c_model or a2c_t_model:
             for _ in range(num_batches):       
                 inputs, values = next(iter(self.data_loader))
                 inputs = Variable(inputs)

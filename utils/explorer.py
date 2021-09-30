@@ -2,6 +2,7 @@ import logging
 import copy
 import torch
 from crowd_sim.envs.utils.info import *
+import time
 
 
 class Explorer(object):
@@ -103,6 +104,104 @@ class Explorer(object):
         if print_failure:
             logging.info('Collision cases: ' + ' '.join([str(x) for x in collision_cases]))
             logging.info('Timeout cases: ' + ' '.join([str(x) for x in timeout_cases]))
+    def run_k_episodes_from_file(self, k, phase, file_name, update_memory=False, imitation_learning=False, episode=None,
+                                 print_failure=False):
+        self.robot.policy.set_phase(phase)
+        t1 = time.time()
+        success_times = []
+        collision_times = []
+        timeout_times = []
+        success = 0
+        collision = 0
+        timeout = 0
+        too_close = 0
+        low_success = 0
+        mid_success = 0
+        high_success = 0
+        min_dist = []
+        cumulative_rewards = []
+        collision_cases = []
+        timeout_cases = []
+        for i in range(k):
+            # ob = self.env.reset(phase)
+            ob = self.env.reset_from_file(phase, file_name, i)
+            # print(i)
+            # print(self.env.humans)
+            done = False
+            states = []
+            actions = []
+            rewards = []
+            while not done:
+                t1 = time.time()
+                action = self.robot.act(ob)
+                t2 = time.time()
+                # print(t2 - t1)
+                ob, reward, done, info = self.env.step(action)
+                states.append(self.robot.policy.last_state)
+                actions.append(action)
+                rewards.append(reward)
+
+                if isinstance(info, Danger):
+                    too_close += 1
+                    min_dist.append(info.min_dist)
+
+            if isinstance(info, ReachGoal):
+                success += 1
+                success_times.append(self.env.global_time)
+                if i < 300:
+                    low_success += 1
+                elif i < 700 and i >= 300:
+                    mid_success += 1
+                else:
+                    high_success += 1
+            elif isinstance(info, Collision):
+                collision += 1
+                collision_cases.append(i)
+                collision_times.append(self.env.global_time)
+            elif isinstance(info, Timeout):
+                timeout += 1
+                timeout_cases.append(i)
+                timeout_times.append(self.env.time_limit)
+            else:
+                raise ValueError('Invalid end signal from environment')
+
+            if update_memory:
+                if isinstance(info, ReachGoal) or isinstance(info, Collision):
+                    # only add positive(success) or negative(collision) experience in experience set
+                    self.update_memory(states, actions, rewards, imitation_learning)
+
+            cumulative_rewards.append(sum([pow(self.gamma, t * self.robot.time_step * self.robot.v_pref)
+                                           * reward for t, reward in enumerate(rewards)]))
+
+        success_rate = success / k
+        collision_rate = collision / k
+        assert success + collision + timeout == k
+        avg_nav_time = sum(success_times) / len(success_times) if success_times else self.env.time_limit
+
+        extra_info = '' if episode is None else 'in episode {} '.format(episode)
+        logging.info('{:<5} {}has success rate: {:.2f}, collision rate: {:.2f}, nav time: {:.2f}, total reward: {:.4f}'.
+                     format(phase.upper(), extra_info, success_rate, collision_rate, avg_nav_time,
+                            average(cumulative_rewards)))
+        if phase in ['val', 'test']:
+            num_step = sum(success_times + collision_times + timeout_times) / self.robot.time_step
+            logging.info('Frequency of being in danger: %.2f and average min separate distance in danger: %.2f',
+                         too_close / num_step, average(min_dist))
+
+        if print_failure:
+            logging.info('The number of Collision cases : %d', collision)
+            logging.info('Collision cases: ' + ' '.join([str(x) for x in collision_cases]))
+            logging.info('The number of Timeout cases : %d', timeout)
+            logging.info('Timeout cases: ' + ' '.join([str(x) for x in timeout_cases]))
+            logging.info('The number of Success cases with humans<5: %d', low_success)
+            logging.info('The number of Success cases with humans=5: %d', mid_success)
+            logging.info('The number of Success cases with humans>5: %d', high_success)
+            # print('The number of Success cases :', success)
+            # print('The number of Collision cases :', len(timeout_cases))
+        t2 = time.time()
+        # if not imitation_learning:
+        #     print('rl explorer time:',t2-t1)
+
+
 
     def update_memory(self, states, actions, rewards, imitation_learning=False):
         if self.memory is None or self.gamma is None:

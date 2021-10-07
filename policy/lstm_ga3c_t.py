@@ -7,6 +7,7 @@ from crowd_nav.policy.multi_human_rl import MultiHumanRL
 from my_utils import process_state
 
 from crowd_sim.envs.utils.action import ActionRot, ActionXY
+import torch.nn.functional as F
 
 class ValueNetwork1(nn.Module):
     def __init__(self, input_dim, self_state_dim, mlp_dims, lstm_hidden_dim):
@@ -153,7 +154,12 @@ class A2CNet(nn.Module):
         values = self.value_net(joint_state)
         logits = self.policy_net(joint_state)
 
-        return logits, values
+
+        # add new output Q, change critic net to predict Q value instead
+        probs = F.softmax(logits, dim=1).clamp(max=1 - 1e-20)  # Prevent 1s and hence NaNs
+        # V = (Q * probs).sum(1, keepdim=True) # V is expectation of Q under π
+
+        return probs, values
 
 class LstmGA3C_t(MultiHumanRL):
     def __init__(self):
@@ -251,6 +257,11 @@ class LstmGA3C_t(MultiHumanRL):
 
         if self.phase == 'train':
             self.last_state = self.transform(state)
+
+        # print("inside model, predict")
+        # print(self.phase)
+        # print(state)
+        # print(self.last_state)
 
         # print(max_action) # ActionXY(vx=-0.38268343236509034, vy=-0.9238795325112865)
         # print(type(max_action)) # <class 'crowd_sim.envs.utils.action.ActionXY'>

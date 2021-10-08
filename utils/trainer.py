@@ -107,92 +107,93 @@ class Trainer(object):
         if self.data_loader is None and not (a2c_model or a2c_t_model):
             self.data_loader = DataLoader(self.memory, self.batch_size, shuffle=True)
         elif a2c_model or a2c_t_model:
-            trajectories = self.memory.sample_batch(num_batches, maxlen=self.memory.max_episode_length) # maxlen = 100
+            trajectories = self.memory.sample_batch(self.batch_size, maxlen=self.memory.max_episode_length) # maxlen = 100
 
         losses = 0
         
         
         if a2c_model or a2c_t_model:
-            # print("inside trainer optimize batch")
-            policies, Vs, actions, rewards, old_policies = [], [], [], [], []
-            # print(len(trajectories)) # minimum time steps for all trajectories
-            # print(len(trajectories[0])) # num of trajectories
-            
-            for i in range(len(trajectories) - 1):
-                # Unpack first half of transition
-                state = Variable(torch.cat(tuple(trajectory.state.unsqueeze(0) for trajectory in trajectories[i]), 0))
-                action = Variable(torch.LongTensor([trajectory.action for trajectory in trajectories[i]]).unsqueeze(1))
-                reward = Variable(torch.Tensor([trajectory.reward for trajectory in trajectories[i]]).unsqueeze(1))
-                old_policy = Variable(torch.cat(tuple(trajectory.policy for trajectory in trajectories[i]), 0))
-
-                # Calculate policy and values
-                ## convert state to proper dim, replaced by unsqueeze cmd above
-                # state = state.view(num_batches,-1,self.model.joint_input_dim)
-                probs, V  = self.model(state)
+            # repeat for num_batches
+            for _ in range(num_batches):   
+                policies, Vs, actions, rewards, old_policies = [], [], [], [], []
+                # print(len(trajectories)) # minimum time steps for all trajectories
+                # print(len(trajectories[0])) # num of trajectories
                 
-                # debug shape
-                # print(probs.shape)
-                # print(V.shape)
-                # print(action.shape)
-                # print(reward.shape)
-                # print(old_policy.shape)
+                for i in range(len(trajectories) - 1):
+                    # Unpack first half of transition
+                    state = Variable(torch.cat(tuple(trajectory.state.unsqueeze(0) for trajectory in trajectories[i]), 0))
+                    action = Variable(torch.LongTensor([trajectory.action for trajectory in trajectories[i]]).unsqueeze(1))
+                    reward = Variable(torch.Tensor([trajectory.reward for trajectory in trajectories[i]]).unsqueeze(1))
+                    old_policy = Variable(torch.cat(tuple(trajectory.policy for trajectory in trajectories[i]), 0))
 
-                # Save outputs for offline training
-                [arr.append(el) for arr, el in zip((policies, Vs, actions, rewards, old_policies), (probs, V, action, reward, old_policy))]
+                    # Calculate policy and values
+                    ## convert state to proper dim, replaced by unsqueeze cmd above
+                    # state = state.view(num_batches,-1,self.model.joint_input_dim)
+                    probs, V  = self.model(state)
+                    
+                    # debug shape
+                    # print(probs.shape)
+                    # print(V.shape)
+                    # print(action.shape)
+                    # print(reward.shape)
+                    # print(old_policy.shape)
 
-                # Unpack second half of transition
-                next_state = torch.cat(tuple(trajectory.state.unsqueeze(0) for trajectory in trajectories[i + 1]), 0)
-                done = torch.Tensor([trajectory.action is None for trajectory in trajectories[i + 1]]).unsqueeze(1)
+                    # Save outputs for offline training
+                    [arr.append(el) for arr, el in zip((policies, Vs, actions, rewards, old_policies), (probs, V, action, reward, old_policy))]
 
-                # debug shape
-                # print(next_state.shape)
-                # print(done.shape)
+                    # Unpack second half of transition
+                    next_state = torch.cat(tuple(trajectory.state.unsqueeze(0) for trajectory in trajectories[i + 1]), 0)
+                    done = torch.Tensor([trajectory.action is None for trajectory in trajectories[i + 1]]).unsqueeze(1)
 
-            # Do forward pass for all transitions
-            _, Qret = self.model(next_state)
-            # Qret = 0 for terminal s, V(s_i; θ) otherwise
-            Qret = ((1 - done) * Qret).detach()
+                    # debug shape
+                    # print(next_state.shape)
+                    # print(done.shape)
 
-            # perform optimization calculations
-            policy_loss, value_loss = 0, 0
-            for i in reversed(range(len(rewards))):
-                # Importance sampling weights ρ ← π(∙|s_i) / µ(∙|s_i); 1 for on-policy
-                rho = policies[i].detach() / old_policies[i]
-                
-                # Qret ← r_i + γQret
-                Qret = rewards[i] + self.gamma * Qret
-                # Advantage A ← Qret - V(s_i; θ)
-                A = Qret - Vs[i]
+                # Do forward pass for all transitions
+                _, Qret = self.model(next_state)
+                # Qret = 0 for terminal s, V(s_i; θ) otherwise
+                Qret = ((1 - done) * Qret).detach()
 
-                # Log policy log(π(a_i|s_i; θ))
-                log_prob = policies[i].gather(1, actions[i]).log()
-                # g ← min(c, ρ_a_i)∙∇θ∙log(π(a_i|s_i; θ))∙A
-                single_step_policy_loss = -(rho.gather(1, actions[i]).clamp(max=10) * log_prob * A.detach()).mean(0)  # Average over batch
+                # perform optimization calculations
+                policy_loss, value_loss = 0, 0
+                for i in reversed(range(len(rewards))):
+                    # Importance sampling weights ρ ← π(∙|s_i) / µ(∙|s_i); 1 for on-policy
+                    rho = policies[i].detach() / old_policies[i]
+                    
+                    # Qret ← r_i + γQret
+                    Qret = rewards[i] + self.gamma * Qret
+                    # Advantage A ← Qret - V(s_i; θ)
+                    A = Qret - Vs[i]
 
-                # Off-policy bias correction
-                # omitted for now
-                
-                # Policy update dθ ← dθ + ∂θ/∂θ∙g
-                policy_loss += single_step_policy_loss
+                    # Log policy log(π(a_i|s_i; θ))
+                    log_prob = policies[i].gather(1, actions[i]).log()
+                    # g ← min(c, ρ_a_i)∙∇θ∙log(π(a_i|s_i; θ))∙A
+                    single_step_policy_loss = -(rho.gather(1, actions[i]).clamp(max=10) * log_prob * A.detach()).mean(0)  # Average over batch
 
-                # Entropy regularisation dθ ← dθ + β∙∇θH(π(s_i; θ))
-                policy_loss -= 0.0001 * -(policies[i].log() * policies[i]).sum(1).mean(0)  # Sum over probabilities, average over batch; 0.0001 is entropy weight β
+                    # Off-policy bias correction
+                    # omitted for now
+                    
+                    # Policy update dθ ← dθ + ∂θ/∂θ∙g
+                    policy_loss += single_step_policy_loss
 
-                # Value update dθ ← dθ - ∇θ∙1/2∙(Qret - Q(s_i, a_i; θ))^2
-                # Q = Qs[i].gather(1, actions[i])
-                value_loss += ( A ** 2 / 2).mean(0)  # Least squares loss
+                    # Entropy regularisation dθ ← dθ + β∙∇θH(π(s_i; θ))
+                    policy_loss -= 0.0001 * -(policies[i].log() * policies[i]).sum(1).mean(0)  # Sum over probabilities, average over batch; 0.0001 is entropy weight β
 
-                # print(policy_loss)
-                # # print(policy_loss.shape)
-                # print(value_loss)
-                # print("end")
+                    # Value update dθ ← dθ - ∇θ∙1/2∙(Qret - Q(s_i, a_i; θ))^2
+                    # Q = Qs[i].gather(1, actions[i])
+                    value_loss += ( A ** 2 / 2).mean(0)  # Least squares loss
 
-            loss = policy_loss + value_loss
-            self.optimizer.zero_grad()
-            loss.backward()
-            self.optimizer.step()
+                    # print(policy_loss)
+                    # # print(policy_loss.shape)
+                    # print(value_loss)
+                    # print("end")
 
-            losses += loss.data.item()
+                loss = policy_loss + value_loss
+                self.optimizer.zero_grad()
+                loss.backward()
+                self.optimizer.step()
+
+                losses += loss.data.item()
 
 
             # print(Qret)

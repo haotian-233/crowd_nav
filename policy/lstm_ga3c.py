@@ -6,6 +6,7 @@ from crowd_nav.policy.cadrl import mlp
 from crowd_nav.policy.multi_human_rl import MultiHumanRL
 
 from crowd_sim.envs.utils.action import ActionRot, ActionXY
+import torch.nn.functional as F
 
 class ValueNetwork1(nn.Module):
     def __init__(self, input_dim, self_state_dim, mlp_dims, lstm_hidden_dim):
@@ -138,7 +139,9 @@ class A2CNet(nn.Module):
         values = self.value_net(joint_state)
         logits = self.policy_net(joint_state)
 
-        return logits, values
+        probs = F.softmax(logits, dim=1).clamp(max=1 - 1e-20)  # Prevent 1s and hence NaNs
+
+        return probs, values
 
 class LstmGA3C(MultiHumanRL):
     def __init__(self):

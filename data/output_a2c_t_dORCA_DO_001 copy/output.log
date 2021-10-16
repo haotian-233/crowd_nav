@@ -1,0 +1,1346 @@
+2021-10-16 18:34:38, DEBUG: Popen(['git', 'cat-file', '--batch-check'], cwd=/home/jia/Documents/MasterProject/CrowdNav-master/crowd_nav, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-10-16 18:34:38, INFO: Current git head hash code: %s
+2021-10-16 18:34:38, INFO: Using device: cpu
+2021-10-16 18:34:38, INFO: Policy: LSTM-GA3C w/o pairwise interaction module
+2021-10-16 18:34:38, INFO: human number: 5
+2021-10-16 18:34:38, INFO: Not randomize human's radius and preferred speed
+2021-10-16 18:34:38, INFO: Training simulation: circle_crossing, test simulation: circle_crossing
+2021-10-16 18:34:38, INFO: Square width: 10.0, circle width: 4.0
+2021-10-16 18:34:38, INFO: Current learning rate: 0.010000
+2021-10-16 18:34:38, INFO: Orca_danger_dist: 1.00
+2021-10-16 18:34:38, INFO: Policy: ORCA_discrete without occupancy map
+2021-10-16 18:34:38, INFO: Dynamic Obstacle Set FALSE!
+2021-10-16 18:34:38, DEBUG: update action set TRUE
+2021-10-16 18:37:30, INFO: TRAIN has success rate: 0.61, collision rate: 0.19, nav time: 15.16, total reward: 0.0679
+2021-10-16 18:37:38, DEBUG: Average loss in epoch 0: 1.32E-03
+2021-10-16 18:37:46, DEBUG: Average loss in epoch 1: 1.24E-03
+2021-10-16 18:37:46, INFO: Finish imitation learning. Weights saved.
+2021-10-16 18:37:46, INFO: Experience set size: 10000/10000
+2021-10-16 18:37:46, INFO: Agent is invisible and has holonomic kinematic constraint
+2021-10-16 18:37:46, INFO: Current learning rate: 0.001000
+2021-10-16 18:37:50, INFO: TRAIN in episode 0 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: -5.79E-01
+2021-10-16 18:37:54, INFO: TRAIN in episode 1 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0020, loss: -6.01E-01
+2021-10-16 18:37:56, INFO: TRAIN in episode 2 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.1076, loss: -1.01E+00
+2021-10-16 18:38:01, INFO: TRAIN in episode 3 has success rate: 1.00, collision rate: 0.00, nav time: 20.25, total reward: 0.1216, loss: -6.36E-01
+2021-10-16 18:38:05, INFO: TRAIN in episode 4 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: -1.06E+00
+2021-10-16 18:38:10, INFO: TRAIN in episode 5 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: -1.08E+00
+2021-10-16 18:38:14, INFO: TRAIN in episode 6 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: -5.99E-01
+2021-10-16 18:38:19, INFO: TRAIN in episode 7 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: -6.29E-01
+2021-10-16 18:38:23, INFO: TRAIN in episode 8 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0131, loss: -9.81E-01
+2021-10-16 18:38:23, INFO: TRAIN in episode 9 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2435, loss: -1.10E+00
+2021-10-16 18:38:28, INFO: TRAIN in episode 10 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: -4.77E-01
+2021-10-16 18:38:33, INFO: TRAIN in episode 11 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: -7.17E-01
+2021-10-16 18:38:38, INFO: TRAIN in episode 12 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: -6.80E-01
+2021-10-16 18:38:43, INFO: TRAIN in episode 13 has success rate: 1.00, collision rate: 0.00, nav time: 22.75, total reward: 0.0934, loss: -5.15E-01
+2021-10-16 18:38:49, INFO: TRAIN in episode 14 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0489, loss: -9.40E-01
+2021-10-16 18:38:53, INFO: TRAIN in episode 15 has success rate: 1.00, collision rate: 0.00, nav time: 19.75, total reward: 0.1282, loss: -7.09E-01
+2021-10-16 18:38:58, INFO: TRAIN in episode 16 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: -7.51E-01
+2021-10-16 18:39:03, INFO: TRAIN in episode 17 has success rate: 1.00, collision rate: 0.00, nav time: 23.50, total reward: 0.0863, loss: -6.44E-01
+2021-10-16 18:39:08, INFO: TRAIN in episode 18 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: -7.32E-01
+2021-10-16 18:39:14, INFO: TRAIN in episode 19 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0156, loss: -8.34E-01
+2021-10-16 18:39:20, INFO: TRAIN in episode 20 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0129, loss: -9.35E-01
+2021-10-16 18:39:26, INFO: TRAIN in episode 21 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: -7.34E-01
+2021-10-16 18:39:28, INFO: TRAIN in episode 22 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.0987, loss: -1.22E+00
+2021-10-16 18:39:35, INFO: TRAIN in episode 23 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: -6.62E-01
+2021-10-16 18:39:39, INFO: TRAIN in episode 24 has success rate: 1.00, collision rate: 0.00, nav time: 17.50, total reward: 0.1624, loss: -8.76E-01
+2021-10-16 18:39:44, INFO: TRAIN in episode 25 has success rate: 1.00, collision rate: 0.00, nav time: 20.25, total reward: 0.1216, loss: -6.24E-01
+2021-10-16 18:39:50, INFO: TRAIN in episode 26 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: -6.74E-01
+2021-10-16 18:39:56, INFO: TRAIN in episode 27 has success rate: 1.00, collision rate: 0.00, nav time: 21.75, total reward: 0.1038, loss: -6.41E-01
+2021-10-16 18:40:01, INFO: TRAIN in episode 28 has success rate: 1.00, collision rate: 0.00, nav time: 20.25, total reward: 0.1092, loss: -6.53E-01
+2021-10-16 18:40:07, INFO: TRAIN in episode 29 has success rate: 1.00, collision rate: 0.00, nav time: 21.50, total reward: 0.0853, loss: -5.96E-01
+2021-10-16 18:40:12, INFO: TRAIN in episode 30 has success rate: 1.00, collision rate: 0.00, nav time: 19.25, total reward: 0.1351, loss: -5.59E-01
+2021-10-16 18:40:17, INFO: TRAIN in episode 31 has success rate: 1.00, collision rate: 0.00, nav time: 14.25, total reward: 0.2114, loss: -5.78E-01
+2021-10-16 18:40:21, INFO: TRAIN in episode 32 has success rate: 1.00, collision rate: 0.00, nav time: 13.75, total reward: 0.2214, loss: -5.49E-01
+2021-10-16 18:40:25, INFO: TRAIN in episode 33 has success rate: 1.00, collision rate: 0.00, nav time: 15.00, total reward: 0.2026, loss: -6.14E-01
+2021-10-16 18:40:29, INFO: TRAIN in episode 34 has success rate: 1.00, collision rate: 0.00, nav time: 13.50, total reward: 0.2476, loss: -6.19E-01
+2021-10-16 18:40:34, INFO: TRAIN in episode 35 has success rate: 1.00, collision rate: 0.00, nav time: 16.00, total reward: 0.1555, loss: -7.12E-01
+2021-10-16 18:40:41, INFO: TRAIN in episode 36 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: -8.99E-01
+2021-10-16 18:40:47, INFO: TRAIN in episode 37 has success rate: 1.00, collision rate: 0.00, nav time: 19.50, total reward: 0.1316, loss: -5.19E-01
+2021-10-16 18:40:52, INFO: TRAIN in episode 38 has success rate: 1.00, collision rate: 0.00, nav time: 16.25, total reward: 0.1853, loss: -7.53E-01
+2021-10-16 18:40:57, INFO: TRAIN in episode 39 has success rate: 1.00, collision rate: 0.00, nav time: 14.25, total reward: 0.2280, loss: -5.23E-01
+2021-10-16 18:41:00, INFO: TRAIN in episode 40 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.1332, loss: -1.40E+00
+2021-10-16 18:41:06, INFO: TRAIN in episode 41 has success rate: 1.00, collision rate: 0.00, nav time: 18.50, total reward: 0.1462, loss: -5.00E-01
+2021-10-16 18:41:12, INFO: TRAIN in episode 42 has success rate: 1.00, collision rate: 0.00, nav time: 18.25, total reward: 0.1501, loss: -4.95E-01
+2021-10-16 18:41:16, INFO: TRAIN in episode 43 has success rate: 1.00, collision rate: 0.00, nav time: 14.75, total reward: 0.1970, loss: -4.80E-01
+2021-10-16 18:41:21, INFO: TRAIN in episode 44 has success rate: 1.00, collision rate: 0.00, nav time: 14.50, total reward: 0.2228, loss: -7.84E-01
+2021-10-16 18:41:24, INFO: TRAIN in episode 45 has success rate: 1.00, collision rate: 0.00, nav time: 12.00, total reward: 0.2893, loss: -5.44E-01
+2021-10-16 18:41:29, INFO: TRAIN in episode 46 has success rate: 1.00, collision rate: 0.00, nav time: 13.75, total reward: 0.2411, loss: -7.24E-01
+2021-10-16 18:41:34, INFO: TRAIN in episode 47 has success rate: 1.00, collision rate: 0.00, nav time: 17.00, total reward: 0.1712, loss: -6.09E-01
+2021-10-16 18:41:39, INFO: TRAIN in episode 48 has success rate: 1.00, collision rate: 0.00, nav time: 16.25, total reward: 0.1626, loss: -5.78E-01
+2021-10-16 18:41:43, INFO: TRAIN in episode 49 has success rate: 1.00, collision rate: 0.00, nav time: 13.75, total reward: 0.2411, loss: -4.29E-01
+2021-10-16 18:41:48, INFO: TRAIN in episode 50 has success rate: 1.00, collision rate: 0.00, nav time: 15.50, total reward: 0.2005, loss: -4.77E-01
+2021-10-16 18:41:53, INFO: TRAIN in episode 51 has success rate: 1.00, collision rate: 0.00, nav time: 15.00, total reward: 0.1650, loss: -6.12E-01
+2021-10-16 18:41:58, INFO: TRAIN in episode 52 has success rate: 1.00, collision rate: 0.00, nav time: 16.50, total reward: 0.1694, loss: -7.78E-01
+2021-10-16 18:42:03, INFO: TRAIN in episode 53 has success rate: 1.00, collision rate: 0.00, nav time: 15.00, total reward: 0.1856, loss: -7.00E-01
+2021-10-16 18:42:08, INFO: TRAIN in episode 54 has success rate: 1.00, collision rate: 0.00, nav time: 16.75, total reward: 0.1442, loss: -6.21E-01
+2021-10-16 18:42:15, INFO: TRAIN in episode 55 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: -1.12E+00
+2021-10-16 18:42:19, INFO: TRAIN in episode 56 has success rate: 1.00, collision rate: 0.00, nav time: 12.50, total reward: 0.2751, loss: -6.85E-01
+2021-10-16 18:42:23, INFO: TRAIN in episode 57 has success rate: 1.00, collision rate: 0.00, nav time: 12.25, total reward: 0.1910, loss: -3.11E-01
+2021-10-16 18:42:28, INFO: TRAIN in episode 58 has success rate: 1.00, collision rate: 0.00, nav time: 15.75, total reward: 0.1953, loss: -6.01E-01
+2021-10-16 18:42:32, INFO: TRAIN in episode 59 has success rate: 1.00, collision rate: 0.00, nav time: 12.25, total reward: 0.2824, loss: -6.96E-01
+2021-10-16 18:42:37, INFO: TRAIN in episode 60 has success rate: 1.00, collision rate: 0.00, nav time: 15.50, total reward: 0.1848, loss: -5.67E-01
+2021-10-16 18:42:42, INFO: TRAIN in episode 61 has success rate: 1.00, collision rate: 0.00, nav time: 16.50, total reward: 0.1689, loss: -5.80E-01
+2021-10-16 18:42:47, INFO: TRAIN in episode 62 has success rate: 1.00, collision rate: 0.00, nav time: 15.00, total reward: 0.1641, loss: -8.20E-01
+2021-10-16 18:42:52, INFO: TRAIN in episode 63 has success rate: 1.00, collision rate: 0.00, nav time: 15.00, total reward: 0.1939, loss: -6.44E-01
+2021-10-16 18:42:56, INFO: TRAIN in episode 64 has success rate: 1.00, collision rate: 0.00, nav time: 12.00, total reward: 0.2900, loss: -7.20E-01
+2021-10-16 18:43:00, INFO: TRAIN in episode 65 has success rate: 1.00, collision rate: 0.00, nav time: 13.25, total reward: 0.2542, loss: -6.48E-01
+2021-10-16 18:43:04, INFO: TRAIN in episode 66 has success rate: 1.00, collision rate: 0.00, nav time: 13.00, total reward: 0.2401, loss: -6.68E-01
+2021-10-16 18:43:08, INFO: TRAIN in episode 67 has success rate: 1.00, collision rate: 0.00, nav time: 10.75, total reward: 0.1879, loss: -9.73E-02
+2021-10-16 18:43:12, INFO: TRAIN in episode 68 has success rate: 1.00, collision rate: 0.00, nav time: 12.25, total reward: 0.2824, loss: -7.69E-01
+2021-10-16 18:43:17, INFO: TRAIN in episode 69 has success rate: 1.00, collision rate: 0.00, nav time: 16.50, total reward: 0.1646, loss: -6.25E-01
+2021-10-16 18:43:23, INFO: TRAIN in episode 70 has success rate: 1.00, collision rate: 0.00, nav time: 16.50, total reward: 0.1805, loss: -6.30E-01
+2021-10-16 18:43:23, INFO: TRAIN in episode 71 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2479, loss: -1.70E+00
+2021-10-16 18:43:28, INFO: TRAIN in episode 72 has success rate: 1.00, collision rate: 0.00, nav time: 17.25, total reward: 0.0921, loss: -8.07E-01
+2021-10-16 18:43:35, INFO: TRAIN in episode 73 has success rate: 1.00, collision rate: 0.00, nav time: 20.75, total reward: 0.1013, loss: -8.23E-01
+2021-10-16 18:43:39, INFO: TRAIN in episode 74 has success rate: 1.00, collision rate: 0.00, nav time: 15.75, total reward: 0.1687, loss: -8.85E-01
+2021-10-16 18:43:43, INFO: TRAIN in episode 75 has success rate: 1.00, collision rate: 0.00, nav time: 13.75, total reward: 0.2023, loss: -1.00E+00
+2021-10-16 18:43:47, INFO: TRAIN in episode 76 has success rate: 1.00, collision rate: 0.00, nav time: 11.50, total reward: 0.2797, loss: -7.50E-01
+2021-10-16 18:43:51, INFO: TRAIN in episode 77 has success rate: 1.00, collision rate: 0.00, nav time: 13.75, total reward: 0.2411, loss: -1.13E+00
+2021-10-16 18:43:56, INFO: TRAIN in episode 78 has success rate: 1.00, collision rate: 0.00, nav time: 13.75, total reward: 0.2411, loss: -1.02E+00
+2021-10-16 18:44:00, INFO: TRAIN in episode 79 has success rate: 1.00, collision rate: 0.00, nav time: 12.50, total reward: 0.2271, loss: -8.72E-01
+2021-10-16 18:44:04, INFO: TRAIN in episode 80 has success rate: 1.00, collision rate: 0.00, nav time: 13.00, total reward: 0.2610, loss: -1.06E+00
+2021-10-16 18:44:08, INFO: TRAIN in episode 81 has success rate: 1.00, collision rate: 0.00, nav time: 13.50, total reward: 0.2476, loss: -1.09E+00
+2021-10-16 18:44:14, INFO: TRAIN in episode 82 has success rate: 1.00, collision rate: 0.00, nav time: 19.25, total reward: 0.1059, loss: -9.38E-01
+2021-10-16 18:44:16, INFO: TRAIN in episode 83 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2010, loss: -1.48E+00
+2021-10-16 18:44:17, INFO: TRAIN in episode 84 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.1909, loss: -1.73E+00
+2021-10-16 18:44:22, INFO: TRAIN in episode 85 has success rate: 1.00, collision rate: 0.00, nav time: 15.75, total reward: 0.1922, loss: -1.20E+00
+2021-10-16 18:44:25, INFO: TRAIN in episode 86 has success rate: 1.00, collision rate: 0.00, nav time: 11.00, total reward: 0.2058, loss: -4.44E-01
+2021-10-16 18:44:29, INFO: TRAIN in episode 87 has success rate: 1.00, collision rate: 0.00, nav time: 12.25, total reward: 0.2213, loss: -2.86E-01
+2021-10-16 18:44:33, INFO: TRAIN in episode 88 has success rate: 1.00, collision rate: 0.00, nav time: 14.75, total reward: 0.2170, loss: -1.09E+00
+2021-10-16 18:44:37, INFO: TRAIN in episode 89 has success rate: 1.00, collision rate: 0.00, nav time: 14.00, total reward: 0.2349, loss: -7.56E-01
+2021-10-16 18:44:42, INFO: TRAIN in episode 90 has success rate: 1.00, collision rate: 0.00, nav time: 14.25, total reward: 0.1993, loss: -7.99E-01
+2021-10-16 18:44:47, INFO: TRAIN in episode 91 has success rate: 1.00, collision rate: 0.00, nav time: 15.50, total reward: 0.1674, loss: -1.49E+00
+2021-10-16 18:44:51, INFO: TRAIN in episode 92 has success rate: 1.00, collision rate: 0.00, nav time: 13.25, total reward: 0.2476, loss: -7.22E-01
+2021-10-16 18:44:53, INFO: TRAIN in episode 93 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2593, loss: -1.05E+00
+2021-10-16 18:44:57, INFO: TRAIN in episode 94 has success rate: 1.00, collision rate: 0.00, nav time: 13.50, total reward: 0.1406, loss: -1.37E+00
+2021-10-16 18:45:01, INFO: TRAIN in episode 95 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.1030, loss: -1.77E+00
+2021-10-16 18:45:04, INFO: TRAIN in episode 96 has success rate: 1.00, collision rate: 0.00, nav time: 12.25, total reward: 0.2824, loss: -1.29E+00
+2021-10-16 18:45:09, INFO: TRAIN in episode 97 has success rate: 1.00, collision rate: 0.00, nav time: 15.00, total reward: 0.2114, loss: -1.13E+00
+2021-10-16 18:45:14, INFO: TRAIN in episode 98 has success rate: 1.00, collision rate: 0.00, nav time: 15.25, total reward: 0.1602, loss: -1.17E+00
+2021-10-16 18:45:18, INFO: TRAIN in episode 99 has success rate: 1.00, collision rate: 0.00, nav time: 13.25, total reward: 0.2542, loss: -1.46E+00
+2021-10-16 18:45:22, INFO: TRAIN in episode 100 has success rate: 1.00, collision rate: 0.00, nav time: 14.00, total reward: 0.2349, loss: -1.47E+00
+2021-10-16 18:45:26, INFO: TRAIN in episode 101 has success rate: 1.00, collision rate: 0.00, nav time: 12.00, total reward: 0.2900, loss: -1.09E+00
+2021-10-16 18:45:30, INFO: TRAIN in episode 102 has success rate: 1.00, collision rate: 0.00, nav time: 13.75, total reward: 0.2224, loss: -1.32E+00
+2021-10-16 18:45:35, INFO: TRAIN in episode 103 has success rate: 1.00, collision rate: 0.00, nav time: 17.50, total reward: 0.1516, loss: -1.39E+00
+2021-10-16 18:45:40, INFO: TRAIN in episode 104 has success rate: 1.00, collision rate: 0.00, nav time: 14.00, total reward: 0.2025, loss: -1.40E+00
+2021-10-16 18:45:44, INFO: TRAIN in episode 105 has success rate: 1.00, collision rate: 0.00, nav time: 13.75, total reward: 0.2089, loss: -1.75E+00
+2021-10-16 18:45:48, INFO: TRAIN in episode 106 has success rate: 1.00, collision rate: 0.00, nav time: 12.25, total reward: 0.2824, loss: -2.01E+00
+2021-10-16 18:45:52, INFO: TRAIN in episode 107 has success rate: 1.00, collision rate: 0.00, nav time: 13.00, total reward: 0.2610, loss: -1.84E+00
+2021-10-16 18:45:56, INFO: TRAIN in episode 108 has success rate: 1.00, collision rate: 0.00, nav time: 12.25, total reward: 0.2711, loss: -1.94E+00
+2021-10-16 18:46:02, INFO: TRAIN in episode 109 has success rate: 1.00, collision rate: 0.00, nav time: 19.50, total reward: 0.1263, loss: -1.43E+00
+2021-10-16 18:46:06, INFO: TRAIN in episode 110 has success rate: 1.00, collision rate: 0.00, nav time: 13.25, total reward: 0.1532, loss: -2.56E+00
+2021-10-16 18:46:11, INFO: TRAIN in episode 111 has success rate: 1.00, collision rate: 0.00, nav time: 16.00, total reward: 0.1741, loss: -2.03E+00
+2021-10-16 18:46:12, INFO: TRAIN in episode 112 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2588, loss: -3.17E+00
+2021-10-16 18:46:14, INFO: TRAIN in episode 113 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.1165, loss: -5.16E+00
+2021-10-16 18:46:17, INFO: TRAIN in episode 114 has success rate: 1.00, collision rate: 0.00, nav time: 10.50, total reward: 0.2773, loss: -8.96E-01
+2021-10-16 18:46:21, INFO: TRAIN in episode 115 has success rate: 1.00, collision rate: 0.00, nav time: 12.25, total reward: 0.2824, loss: -3.29E+00
+2021-10-16 18:46:25, INFO: TRAIN in episode 116 has success rate: 1.00, collision rate: 0.00, nav time: 13.75, total reward: 0.2379, loss: -3.61E+00
+2021-10-16 18:46:26, INFO: TRAIN in episode 117 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2405, loss: -3.51E+00
+2021-10-16 18:46:30, INFO: TRAIN in episode 118 has success rate: 1.00, collision rate: 0.00, nav time: 13.00, total reward: 0.2610, loss: -3.32E+00
+2021-10-16 18:46:32, INFO: TRAIN in episode 119 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.1448, loss: -5.98E+00
+2021-10-16 18:46:37, INFO: TRAIN in episode 120 has success rate: 1.00, collision rate: 0.00, nav time: 14.25, total reward: 0.1513, loss: -5.54E+00
+2021-10-16 18:46:39, INFO: TRAIN in episode 121 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.1165, loss: -8.83E+00
+2021-10-16 18:46:42, INFO: TRAIN in episode 122 has success rate: 1.00, collision rate: 0.00, nav time: 10.50, total reward: 0.2577, loss: -2.87E+00
+2021-10-16 18:46:46, INFO: TRAIN in episode 123 has success rate: 1.00, collision rate: 0.00, nav time: 12.75, total reward: 0.2639, loss: -4.29E+00
+2021-10-16 18:46:48, INFO: TRAIN in episode 124 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.1170, loss: -1.31E+01
+2021-10-16 18:46:53, INFO: TRAIN in episode 125 has success rate: 1.00, collision rate: 0.00, nav time: 14.25, total reward: 0.2267, loss: -7.24E+00
+2021-10-16 18:46:55, INFO: TRAIN in episode 126 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.1618, loss: -9.80E+00
+2021-10-16 18:46:58, INFO: TRAIN in episode 127 has success rate: 1.00, collision rate: 0.00, nav time: 10.25, total reward: 0.2694, loss: -4.96E+00
+2021-10-16 18:47:02, INFO: TRAIN in episode 128 has success rate: 1.00, collision rate: 0.00, nav time: 11.50, total reward: 0.3057, loss: -1.01E+01
+2021-10-16 18:47:05, INFO: TRAIN in episode 129 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.1320, loss: INF
+2021-10-16 18:47:12, INFO: TRAIN in episode 130 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:47:19, INFO: TRAIN in episode 131 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:47:27, INFO: TRAIN in episode 132 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:47:34, INFO: TRAIN in episode 133 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:47:42, INFO: TRAIN in episode 134 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:47:49, INFO: TRAIN in episode 135 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:47:57, INFO: TRAIN in episode 136 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:48:04, INFO: TRAIN in episode 137 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0192, loss: 9.81E-02
+2021-10-16 18:48:11, INFO: TRAIN in episode 138 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:48:18, INFO: TRAIN in episode 139 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:48:21, INFO: TRAIN in episode 140 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2069, loss: 1.09E-01
+2021-10-16 18:48:28, INFO: TRAIN in episode 141 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:48:36, INFO: TRAIN in episode 142 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:48:43, INFO: TRAIN in episode 143 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:48:50, INFO: TRAIN in episode 144 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:48:58, INFO: TRAIN in episode 145 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0229, loss: 9.83E-02
+2021-10-16 18:49:05, INFO: TRAIN in episode 146 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:49:10, INFO: TRAIN in episode 147 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.0425, loss: 9.88E-02
+2021-10-16 18:49:18, INFO: TRAIN in episode 148 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0069, loss: 9.36E-02
+2021-10-16 18:49:25, INFO: TRAIN in episode 149 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:49:32, INFO: TRAIN in episode 150 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:49:40, INFO: TRAIN in episode 151 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:49:47, INFO: TRAIN in episode 152 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:49:54, INFO: TRAIN in episode 153 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0071, loss: 9.37E-02
+2021-10-16 18:50:01, INFO: TRAIN in episode 154 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:50:09, INFO: TRAIN in episode 155 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.1021, loss: 1.20E-01
+2021-10-16 18:50:16, INFO: TRAIN in episode 156 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:50:24, INFO: TRAIN in episode 157 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:50:32, INFO: TRAIN in episode 158 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0069, loss: 9.53E-02
+2021-10-16 18:50:39, INFO: TRAIN in episode 159 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:50:47, INFO: TRAIN in episode 160 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:50:47, INFO: TRAIN in episode 161 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2372, loss: 4.91E-02
+2021-10-16 18:50:54, INFO: TRAIN in episode 162 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0348, loss: 1.06E-01
+2021-10-16 18:51:02, INFO: TRAIN in episode 163 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:51:10, INFO: TRAIN in episode 164 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:51:18, INFO: TRAIN in episode 165 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:51:25, INFO: TRAIN in episode 166 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:51:33, INFO: TRAIN in episode 167 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:51:41, INFO: TRAIN in episode 168 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:51:48, INFO: TRAIN in episode 169 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:51:56, INFO: TRAIN in episode 170 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:52:03, INFO: TRAIN in episode 171 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:52:11, INFO: TRAIN in episode 172 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0194, loss: 9.38E-02
+2021-10-16 18:52:18, INFO: TRAIN in episode 173 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:52:26, INFO: TRAIN in episode 174 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:52:33, INFO: TRAIN in episode 175 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:52:40, INFO: TRAIN in episode 176 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:52:47, INFO: TRAIN in episode 177 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:52:54, INFO: TRAIN in episode 178 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.1366, loss: 9.76E-02
+2021-10-16 18:53:01, INFO: TRAIN in episode 179 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:53:09, INFO: TRAIN in episode 180 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:53:17, INFO: TRAIN in episode 181 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:53:24, INFO: TRAIN in episode 182 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0080, loss: 9.66E-02
+2021-10-16 18:53:24, INFO: TRAIN in episode 183 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2609, loss: 5.42E-02
+2021-10-16 18:53:31, INFO: TRAIN in episode 184 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:53:38, INFO: TRAIN in episode 185 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:53:45, INFO: TRAIN in episode 186 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:53:52, INFO: TRAIN in episode 187 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:54:00, INFO: TRAIN in episode 188 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:54:07, INFO: TRAIN in episode 189 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:54:14, INFO: TRAIN in episode 190 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:54:22, INFO: TRAIN in episode 191 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:54:29, INFO: TRAIN in episode 192 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0027, loss: 9.46E-02
+2021-10-16 18:54:36, INFO: TRAIN in episode 193 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:54:43, INFO: TRAIN in episode 194 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:54:51, INFO: TRAIN in episode 195 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:54:59, INFO: TRAIN in episode 196 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:55:06, INFO: TRAIN in episode 197 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:55:14, INFO: TRAIN in episode 198 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0121, loss: 9.75E-02
+2021-10-16 18:55:21, INFO: TRAIN in episode 199 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:55:28, INFO: TRAIN in episode 200 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:55:36, INFO: TRAIN in episode 201 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:55:43, INFO: TRAIN in episode 202 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:55:51, INFO: TRAIN in episode 203 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:55:58, INFO: TRAIN in episode 204 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:56:05, INFO: TRAIN in episode 205 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:56:13, INFO: TRAIN in episode 206 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:56:20, INFO: TRAIN in episode 207 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:56:27, INFO: TRAIN in episode 208 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:56:35, INFO: TRAIN in episode 209 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:56:42, INFO: TRAIN in episode 210 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:56:49, INFO: TRAIN in episode 211 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:56:52, INFO: TRAIN in episode 212 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.0895, loss: 9.13E-02
+2021-10-16 18:57:00, INFO: TRAIN in episode 213 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:57:07, INFO: TRAIN in episode 214 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:57:15, INFO: TRAIN in episode 215 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:57:22, INFO: TRAIN in episode 216 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:57:29, INFO: TRAIN in episode 217 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:57:36, INFO: TRAIN in episode 218 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:57:43, INFO: TRAIN in episode 219 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:57:50, INFO: TRAIN in episode 220 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:57:57, INFO: TRAIN in episode 221 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:58:05, INFO: TRAIN in episode 222 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:58:12, INFO: TRAIN in episode 223 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:58:20, INFO: TRAIN in episode 224 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:58:27, INFO: TRAIN in episode 225 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:58:35, INFO: TRAIN in episode 226 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:58:42, INFO: TRAIN in episode 227 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:58:49, INFO: TRAIN in episode 228 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:58:56, INFO: TRAIN in episode 229 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:59:04, INFO: TRAIN in episode 230 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:59:10, INFO: TRAIN in episode 231 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.0312, loss: 1.00E-01
+2021-10-16 18:59:17, INFO: TRAIN in episode 232 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:59:25, INFO: TRAIN in episode 233 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:59:32, INFO: TRAIN in episode 234 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:59:39, INFO: TRAIN in episode 235 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:59:47, INFO: TRAIN in episode 236 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 18:59:54, INFO: TRAIN in episode 237 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:00:02, INFO: TRAIN in episode 238 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:00:09, INFO: TRAIN in episode 239 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:00:17, INFO: TRAIN in episode 240 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:00:24, INFO: TRAIN in episode 241 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:00:32, INFO: TRAIN in episode 242 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:00:39, INFO: TRAIN in episode 243 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:00:47, INFO: TRAIN in episode 244 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:00:54, INFO: TRAIN in episode 245 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:01:02, INFO: TRAIN in episode 246 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:01:09, INFO: TRAIN in episode 247 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:01:16, INFO: TRAIN in episode 248 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0001, loss: 9.35E-02
+2021-10-16 19:01:24, INFO: TRAIN in episode 249 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:01:31, INFO: TRAIN in episode 250 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:01:38, INFO: TRAIN in episode 251 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:01:46, INFO: TRAIN in episode 252 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:01:53, INFO: TRAIN in episode 253 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:02:01, INFO: TRAIN in episode 254 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:02:08, INFO: TRAIN in episode 255 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:02:15, INFO: TRAIN in episode 256 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0060, loss: 9.36E-02
+2021-10-16 19:02:23, INFO: TRAIN in episode 257 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:02:30, INFO: TRAIN in episode 258 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:02:38, INFO: TRAIN in episode 259 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:02:45, INFO: TRAIN in episode 260 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:02:53, INFO: TRAIN in episode 261 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:02:55, INFO: TRAIN in episode 262 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.1105, loss: 8.74E-02
+2021-10-16 19:03:03, INFO: TRAIN in episode 263 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:03:10, INFO: TRAIN in episode 264 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:03:17, INFO: TRAIN in episode 265 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:03:24, INFO: TRAIN in episode 266 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:03:31, INFO: TRAIN in episode 267 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:03:39, INFO: TRAIN in episode 268 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:03:46, INFO: TRAIN in episode 269 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:03:53, INFO: TRAIN in episode 270 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0368, loss: 1.05E-01
+2021-10-16 19:04:00, INFO: TRAIN in episode 271 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:04:08, INFO: TRAIN in episode 272 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:04:15, INFO: TRAIN in episode 273 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:04:22, INFO: TRAIN in episode 274 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:04:30, INFO: TRAIN in episode 275 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:04:37, INFO: TRAIN in episode 276 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:04:45, INFO: TRAIN in episode 277 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:04:52, INFO: TRAIN in episode 278 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:04:57, INFO: TRAIN in episode 279 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.0789, loss: 1.13E-01
+2021-10-16 19:05:05, INFO: TRAIN in episode 280 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0373, loss: 1.09E-01
+2021-10-16 19:05:12, INFO: TRAIN in episode 281 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:05:20, INFO: TRAIN in episode 282 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:05:27, INFO: TRAIN in episode 283 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:05:35, INFO: TRAIN in episode 284 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:05:42, INFO: TRAIN in episode 285 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:05:49, INFO: TRAIN in episode 286 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:05:56, INFO: TRAIN in episode 287 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:06:04, INFO: TRAIN in episode 288 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:06:12, INFO: TRAIN in episode 289 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:06:19, INFO: TRAIN in episode 290 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:06:27, INFO: TRAIN in episode 291 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:06:34, INFO: TRAIN in episode 292 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:06:42, INFO: TRAIN in episode 293 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0401, loss: 1.09E-01
+2021-10-16 19:06:49, INFO: TRAIN in episode 294 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:06:57, INFO: TRAIN in episode 295 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:07:04, INFO: TRAIN in episode 296 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:07:11, INFO: TRAIN in episode 297 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0013, loss: 9.35E-02
+2021-10-16 19:07:19, INFO: TRAIN in episode 298 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:07:26, INFO: TRAIN in episode 299 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:07:34, INFO: TRAIN in episode 300 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:07:41, INFO: TRAIN in episode 301 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:07:48, INFO: TRAIN in episode 302 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:07:56, INFO: TRAIN in episode 303 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:08:03, INFO: TRAIN in episode 304 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0492, loss: 1.11E-01
+2021-10-16 19:08:10, INFO: TRAIN in episode 305 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:08:17, INFO: TRAIN in episode 306 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:08:25, INFO: TRAIN in episode 307 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:08:32, INFO: TRAIN in episode 308 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:08:40, INFO: TRAIN in episode 309 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:08:47, INFO: TRAIN in episode 310 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:08:54, INFO: TRAIN in episode 311 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:09:02, INFO: TRAIN in episode 312 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:09:10, INFO: TRAIN in episode 313 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0032, loss: 9.35E-02
+2021-10-16 19:09:17, INFO: TRAIN in episode 314 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0107, loss: 9.77E-02
+2021-10-16 19:09:24, INFO: TRAIN in episode 315 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:09:32, INFO: TRAIN in episode 316 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:09:39, INFO: TRAIN in episode 317 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:09:46, INFO: TRAIN in episode 318 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:09:54, INFO: TRAIN in episode 319 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:10:01, INFO: TRAIN in episode 320 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:10:08, INFO: TRAIN in episode 321 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:10:15, INFO: TRAIN in episode 322 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:10:22, INFO: TRAIN in episode 323 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:10:30, INFO: TRAIN in episode 324 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:10:37, INFO: TRAIN in episode 325 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:10:44, INFO: TRAIN in episode 326 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:10:52, INFO: TRAIN in episode 327 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:10:59, INFO: TRAIN in episode 328 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:11:06, INFO: TRAIN in episode 329 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:11:14, INFO: TRAIN in episode 330 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:11:21, INFO: TRAIN in episode 331 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:11:28, INFO: TRAIN in episode 332 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:11:35, INFO: TRAIN in episode 333 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:11:42, INFO: TRAIN in episode 334 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:11:50, INFO: TRAIN in episode 335 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:11:57, INFO: TRAIN in episode 336 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:12:05, INFO: TRAIN in episode 337 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:12:12, INFO: TRAIN in episode 338 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0195, loss: 1.01E-01
+2021-10-16 19:12:20, INFO: TRAIN in episode 339 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:12:27, INFO: TRAIN in episode 340 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:12:35, INFO: TRAIN in episode 341 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:12:42, INFO: TRAIN in episode 342 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:12:49, INFO: TRAIN in episode 343 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:12:56, INFO: TRAIN in episode 344 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:13:04, INFO: TRAIN in episode 345 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:13:11, INFO: TRAIN in episode 346 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:13:19, INFO: TRAIN in episode 347 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:13:27, INFO: TRAIN in episode 348 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:13:34, INFO: TRAIN in episode 349 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:13:41, INFO: TRAIN in episode 350 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:13:49, INFO: TRAIN in episode 351 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:13:57, INFO: TRAIN in episode 352 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:14:04, INFO: TRAIN in episode 353 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:14:11, INFO: TRAIN in episode 354 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:14:18, INFO: TRAIN in episode 355 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:14:26, INFO: TRAIN in episode 356 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:14:33, INFO: TRAIN in episode 357 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:14:40, INFO: TRAIN in episode 358 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:14:48, INFO: TRAIN in episode 359 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0258, loss: 1.01E-01
+2021-10-16 19:14:55, INFO: TRAIN in episode 360 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:15:02, INFO: TRAIN in episode 361 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:15:10, INFO: TRAIN in episode 362 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:15:16, INFO: TRAIN in episode 363 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:15:24, INFO: TRAIN in episode 364 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:15:31, INFO: TRAIN in episode 365 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:15:38, INFO: TRAIN in episode 366 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:15:46, INFO: TRAIN in episode 367 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:15:53, INFO: TRAIN in episode 368 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:16:01, INFO: TRAIN in episode 369 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:16:08, INFO: TRAIN in episode 370 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:16:15, INFO: TRAIN in episode 371 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:16:23, INFO: TRAIN in episode 372 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0024, loss: 9.42E-02
+2021-10-16 19:16:26, INFO: TRAIN in episode 373 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.0858, loss: 9.42E-02
+2021-10-16 19:16:33, INFO: TRAIN in episode 374 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:16:41, INFO: TRAIN in episode 375 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:16:48, INFO: TRAIN in episode 376 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0011, loss: 9.39E-02
+2021-10-16 19:16:56, INFO: TRAIN in episode 377 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:17:03, INFO: TRAIN in episode 378 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:17:11, INFO: TRAIN in episode 379 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:17:18, INFO: TRAIN in episode 380 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:17:25, INFO: TRAIN in episode 381 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.0292, loss: 1.02E-01
+2021-10-16 19:17:32, INFO: TRAIN in episode 382 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:17:39, INFO: TRAIN in episode 383 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:17:46, INFO: TRAIN in episode 384 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0089, loss: 9.64E-02
+2021-10-16 19:17:54, INFO: TRAIN in episode 385 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:18:01, INFO: TRAIN in episode 386 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:18:08, INFO: TRAIN in episode 387 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:18:15, INFO: TRAIN in episode 388 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:18:23, INFO: TRAIN in episode 389 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:18:30, INFO: TRAIN in episode 390 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:18:37, INFO: TRAIN in episode 391 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:18:44, INFO: TRAIN in episode 392 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:18:52, INFO: TRAIN in episode 393 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:18:59, INFO: TRAIN in episode 394 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:19:07, INFO: TRAIN in episode 395 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:19:14, INFO: TRAIN in episode 396 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:19:22, INFO: TRAIN in episode 397 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:19:30, INFO: TRAIN in episode 398 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:19:37, INFO: TRAIN in episode 399 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:19:44, INFO: TRAIN in episode 400 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:19:51, INFO: TRAIN in episode 401 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:19:59, INFO: TRAIN in episode 402 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:20:06, INFO: TRAIN in episode 403 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:20:13, INFO: TRAIN in episode 404 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:20:21, INFO: TRAIN in episode 405 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:20:28, INFO: TRAIN in episode 406 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:20:36, INFO: TRAIN in episode 407 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:20:44, INFO: TRAIN in episode 408 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:20:51, INFO: TRAIN in episode 409 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:20:59, INFO: TRAIN in episode 410 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:21:06, INFO: TRAIN in episode 411 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:21:13, INFO: TRAIN in episode 412 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:21:21, INFO: TRAIN in episode 413 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:21:29, INFO: TRAIN in episode 414 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:21:36, INFO: TRAIN in episode 415 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:21:43, INFO: TRAIN in episode 416 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:21:51, INFO: TRAIN in episode 417 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:21:58, INFO: TRAIN in episode 418 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:22:06, INFO: TRAIN in episode 419 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:22:13, INFO: TRAIN in episode 420 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:22:20, INFO: TRAIN in episode 421 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:22:27, INFO: TRAIN in episode 422 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:22:34, INFO: TRAIN in episode 423 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:22:41, INFO: TRAIN in episode 424 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:22:48, INFO: TRAIN in episode 425 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:22:55, INFO: TRAIN in episode 426 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:23:03, INFO: TRAIN in episode 427 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:23:10, INFO: TRAIN in episode 428 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:23:18, INFO: TRAIN in episode 429 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:23:25, INFO: TRAIN in episode 430 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:23:33, INFO: TRAIN in episode 431 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:23:40, INFO: TRAIN in episode 432 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:23:47, INFO: TRAIN in episode 433 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:23:55, INFO: TRAIN in episode 434 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:24:02, INFO: TRAIN in episode 435 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:24:09, INFO: TRAIN in episode 436 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:24:17, INFO: TRAIN in episode 437 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:24:25, INFO: TRAIN in episode 438 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:24:32, INFO: TRAIN in episode 439 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:24:39, INFO: TRAIN in episode 440 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:24:46, INFO: TRAIN in episode 441 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:24:54, INFO: TRAIN in episode 442 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:25:01, INFO: TRAIN in episode 443 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:25:09, INFO: TRAIN in episode 444 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:25:16, INFO: TRAIN in episode 445 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0204, loss: 9.93E-02
+2021-10-16 19:25:23, INFO: TRAIN in episode 446 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:25:30, INFO: TRAIN in episode 447 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:25:38, INFO: TRAIN in episode 448 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:25:45, INFO: TRAIN in episode 449 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:25:53, INFO: TRAIN in episode 450 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:26:00, INFO: TRAIN in episode 451 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:26:08, INFO: TRAIN in episode 452 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:26:15, INFO: TRAIN in episode 453 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:26:22, INFO: TRAIN in episode 454 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:26:29, INFO: TRAIN in episode 455 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:26:37, INFO: TRAIN in episode 456 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:26:44, INFO: TRAIN in episode 457 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:26:51, INFO: TRAIN in episode 458 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:26:59, INFO: TRAIN in episode 459 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:27:07, INFO: TRAIN in episode 460 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:27:14, INFO: TRAIN in episode 461 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:27:21, INFO: TRAIN in episode 462 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:27:28, INFO: TRAIN in episode 463 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:27:35, INFO: TRAIN in episode 464 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:27:42, INFO: TRAIN in episode 465 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:27:50, INFO: TRAIN in episode 466 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:27:57, INFO: TRAIN in episode 467 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:28:04, INFO: TRAIN in episode 468 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:28:12, INFO: TRAIN in episode 469 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:28:20, INFO: TRAIN in episode 470 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:28:28, INFO: TRAIN in episode 471 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:28:35, INFO: TRAIN in episode 472 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:28:41, INFO: TRAIN in episode 473 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:28:49, INFO: TRAIN in episode 474 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:28:55, INFO: TRAIN in episode 475 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:29:03, INFO: TRAIN in episode 476 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:29:11, INFO: TRAIN in episode 477 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:29:19, INFO: TRAIN in episode 478 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:29:26, INFO: TRAIN in episode 479 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:29:33, INFO: TRAIN in episode 480 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:29:40, INFO: TRAIN in episode 481 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:29:47, INFO: TRAIN in episode 482 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:29:55, INFO: TRAIN in episode 483 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:30:02, INFO: TRAIN in episode 484 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:30:10, INFO: TRAIN in episode 485 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:30:17, INFO: TRAIN in episode 486 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:30:25, INFO: TRAIN in episode 487 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:30:32, INFO: TRAIN in episode 488 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:30:39, INFO: TRAIN in episode 489 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:30:43, INFO: TRAIN in episode 490 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.0838, loss: 9.72E-02
+2021-10-16 19:30:50, INFO: TRAIN in episode 491 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:30:57, INFO: TRAIN in episode 492 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:31:05, INFO: TRAIN in episode 493 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:31:12, INFO: TRAIN in episode 494 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:31:19, INFO: TRAIN in episode 495 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:31:26, INFO: TRAIN in episode 496 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:31:34, INFO: TRAIN in episode 497 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0054, loss: 9.36E-02
+2021-10-16 19:31:41, INFO: TRAIN in episode 498 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:31:49, INFO: TRAIN in episode 499 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0011, loss: 9.35E-02
+2021-10-16 19:31:56, INFO: TRAIN in episode 500 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:32:03, INFO: TRAIN in episode 501 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0009, loss: 9.36E-02
+2021-10-16 19:32:10, INFO: TRAIN in episode 502 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:32:18, INFO: TRAIN in episode 503 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:32:24, INFO: TRAIN in episode 504 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:32:32, INFO: TRAIN in episode 505 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0161, loss: 9.83E-02
+2021-10-16 19:32:39, INFO: TRAIN in episode 506 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:32:46, INFO: TRAIN in episode 507 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:32:54, INFO: TRAIN in episode 508 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0233, loss: 9.72E-02
+2021-10-16 19:33:01, INFO: TRAIN in episode 509 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:33:09, INFO: TRAIN in episode 510 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:33:16, INFO: TRAIN in episode 511 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:33:23, INFO: TRAIN in episode 512 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:33:31, INFO: TRAIN in episode 513 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:33:38, INFO: TRAIN in episode 514 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:33:45, INFO: TRAIN in episode 515 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0152, loss: 9.71E-02
+2021-10-16 19:33:53, INFO: TRAIN in episode 516 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:34:00, INFO: TRAIN in episode 517 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:34:07, INFO: TRAIN in episode 518 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:34:15, INFO: TRAIN in episode 519 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:34:23, INFO: TRAIN in episode 520 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0074, loss: 9.64E-02
+2021-10-16 19:34:30, INFO: TRAIN in episode 521 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:34:38, INFO: TRAIN in episode 522 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0356, loss: 9.42E-02
+2021-10-16 19:34:46, INFO: TRAIN in episode 523 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:34:53, INFO: TRAIN in episode 524 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:35:01, INFO: TRAIN in episode 525 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:35:08, INFO: TRAIN in episode 526 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:35:15, INFO: TRAIN in episode 527 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:35:23, INFO: TRAIN in episode 528 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0137, loss: 9.37E-02
+2021-10-16 19:35:30, INFO: TRAIN in episode 529 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:35:37, INFO: TRAIN in episode 530 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:35:45, INFO: TRAIN in episode 531 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:35:52, INFO: TRAIN in episode 532 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:36:00, INFO: TRAIN in episode 533 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0007, loss: 9.35E-02
+2021-10-16 19:36:07, INFO: TRAIN in episode 534 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0224, loss: 9.97E-02
+2021-10-16 19:36:14, INFO: TRAIN in episode 535 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:36:22, INFO: TRAIN in episode 536 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0020, loss: 9.35E-02
+2021-10-16 19:36:30, INFO: TRAIN in episode 537 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:36:37, INFO: TRAIN in episode 538 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:36:45, INFO: TRAIN in episode 539 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:36:51, INFO: TRAIN in episode 540 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:36:59, INFO: TRAIN in episode 541 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:37:06, INFO: TRAIN in episode 542 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:37:13, INFO: TRAIN in episode 543 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:37:21, INFO: TRAIN in episode 544 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:37:28, INFO: TRAIN in episode 545 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:37:35, INFO: TRAIN in episode 546 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:37:43, INFO: TRAIN in episode 547 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:37:50, INFO: TRAIN in episode 548 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:37:58, INFO: TRAIN in episode 549 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:38:05, INFO: TRAIN in episode 550 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0090, loss: 9.36E-02
+2021-10-16 19:38:12, INFO: TRAIN in episode 551 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:38:19, INFO: TRAIN in episode 552 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0067, loss: 9.44E-02
+2021-10-16 19:38:27, INFO: TRAIN in episode 553 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:38:34, INFO: TRAIN in episode 554 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:38:41, INFO: TRAIN in episode 555 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0960, loss: 1.23E-01
+2021-10-16 19:38:49, INFO: TRAIN in episode 556 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:38:56, INFO: TRAIN in episode 557 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0045, loss: 9.36E-02
+2021-10-16 19:39:04, INFO: TRAIN in episode 558 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:39:12, INFO: TRAIN in episode 559 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:39:20, INFO: TRAIN in episode 560 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:39:28, INFO: TRAIN in episode 561 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:39:35, INFO: TRAIN in episode 562 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:39:43, INFO: TRAIN in episode 563 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:39:49, INFO: TRAIN in episode 564 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:39:57, INFO: TRAIN in episode 565 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0008, loss: 9.38E-02
+2021-10-16 19:40:04, INFO: TRAIN in episode 566 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:40:12, INFO: TRAIN in episode 567 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:40:19, INFO: TRAIN in episode 568 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:40:27, INFO: TRAIN in episode 569 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:40:34, INFO: TRAIN in episode 570 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0003, loss: 9.36E-02
+2021-10-16 19:40:41, INFO: TRAIN in episode 571 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:40:49, INFO: TRAIN in episode 572 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:40:56, INFO: TRAIN in episode 573 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:41:04, INFO: TRAIN in episode 574 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:41:11, INFO: TRAIN in episode 575 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:41:19, INFO: TRAIN in episode 576 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:41:26, INFO: TRAIN in episode 577 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:41:33, INFO: TRAIN in episode 578 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:41:41, INFO: TRAIN in episode 579 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:41:48, INFO: TRAIN in episode 580 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:41:55, INFO: TRAIN in episode 581 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:42:02, INFO: TRAIN in episode 582 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:42:09, INFO: TRAIN in episode 583 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:42:17, INFO: TRAIN in episode 584 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0356, loss: 9.98E-02
+2021-10-16 19:42:24, INFO: TRAIN in episode 585 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:42:31, INFO: TRAIN in episode 586 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0002, loss: 9.36E-02
+2021-10-16 19:42:34, INFO: TRAIN in episode 587 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.0907, loss: 9.63E-02
+2021-10-16 19:42:42, INFO: TRAIN in episode 588 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:42:49, INFO: TRAIN in episode 589 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:42:57, INFO: TRAIN in episode 590 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:43:04, INFO: TRAIN in episode 591 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:43:12, INFO: TRAIN in episode 592 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:43:19, INFO: TRAIN in episode 593 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:43:27, INFO: TRAIN in episode 594 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:43:34, INFO: TRAIN in episode 595 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:43:41, INFO: TRAIN in episode 596 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:43:49, INFO: TRAIN in episode 597 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:43:56, INFO: TRAIN in episode 598 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:44:04, INFO: TRAIN in episode 599 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:44:12, INFO: TRAIN in episode 600 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:44:19, INFO: TRAIN in episode 601 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:44:27, INFO: TRAIN in episode 602 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0024, loss: 9.38E-02
+2021-10-16 19:44:35, INFO: TRAIN in episode 603 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:44:42, INFO: TRAIN in episode 604 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:44:50, INFO: TRAIN in episode 605 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:44:57, INFO: TRAIN in episode 606 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:45:04, INFO: TRAIN in episode 607 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:45:11, INFO: TRAIN in episode 608 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:45:19, INFO: TRAIN in episode 609 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:45:26, INFO: TRAIN in episode 610 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:45:33, INFO: TRAIN in episode 611 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:45:41, INFO: TRAIN in episode 612 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:45:48, INFO: TRAIN in episode 613 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:45:56, INFO: TRAIN in episode 614 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:46:03, INFO: TRAIN in episode 615 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:46:11, INFO: TRAIN in episode 616 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:46:18, INFO: TRAIN in episode 617 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:46:25, INFO: TRAIN in episode 618 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:46:33, INFO: TRAIN in episode 619 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:46:40, INFO: TRAIN in episode 620 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:46:47, INFO: TRAIN in episode 621 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:46:55, INFO: TRAIN in episode 622 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:47:02, INFO: TRAIN in episode 623 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:47:09, INFO: TRAIN in episode 624 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:47:17, INFO: TRAIN in episode 625 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:47:24, INFO: TRAIN in episode 626 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:47:32, INFO: TRAIN in episode 627 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:47:39, INFO: TRAIN in episode 628 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:47:47, INFO: TRAIN in episode 629 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:47:55, INFO: TRAIN in episode 630 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:48:02, INFO: TRAIN in episode 631 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0019, loss: 9.42E-02
+2021-10-16 19:48:09, INFO: TRAIN in episode 632 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0002, loss: 9.35E-02
+2021-10-16 19:48:17, INFO: TRAIN in episode 633 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:48:25, INFO: TRAIN in episode 634 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:48:32, INFO: TRAIN in episode 635 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:48:40, INFO: TRAIN in episode 636 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:48:47, INFO: TRAIN in episode 637 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:48:55, INFO: TRAIN in episode 638 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:48:56, INFO: TRAIN in episode 639 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2009, loss: 7.05E-02
+2021-10-16 19:49:03, INFO: TRAIN in episode 640 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:49:11, INFO: TRAIN in episode 641 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:49:19, INFO: TRAIN in episode 642 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:49:27, INFO: TRAIN in episode 643 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:49:34, INFO: TRAIN in episode 644 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:49:42, INFO: TRAIN in episode 645 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:49:49, INFO: TRAIN in episode 646 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:49:56, INFO: TRAIN in episode 647 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:50:04, INFO: TRAIN in episode 648 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:50:11, INFO: TRAIN in episode 649 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:50:18, INFO: TRAIN in episode 650 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:50:26, INFO: TRAIN in episode 651 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:50:33, INFO: TRAIN in episode 652 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:50:41, INFO: TRAIN in episode 653 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:50:49, INFO: TRAIN in episode 654 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:50:56, INFO: TRAIN in episode 655 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:51:04, INFO: TRAIN in episode 656 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:51:11, INFO: TRAIN in episode 657 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:51:13, INFO: TRAIN in episode 658 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.1594, loss: 9.33E-02
+2021-10-16 19:51:21, INFO: TRAIN in episode 659 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:51:29, INFO: TRAIN in episode 660 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:51:36, INFO: TRAIN in episode 661 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:51:44, INFO: TRAIN in episode 662 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:51:52, INFO: TRAIN in episode 663 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:51:59, INFO: TRAIN in episode 664 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0012, loss: 9.35E-02
+2021-10-16 19:52:07, INFO: TRAIN in episode 665 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:52:15, INFO: TRAIN in episode 666 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:52:22, INFO: TRAIN in episode 667 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:52:30, INFO: TRAIN in episode 668 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:52:38, INFO: TRAIN in episode 669 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:52:45, INFO: TRAIN in episode 670 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:52:52, INFO: TRAIN in episode 671 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:53:00, INFO: TRAIN in episode 672 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:53:08, INFO: TRAIN in episode 673 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:53:16, INFO: TRAIN in episode 674 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:53:23, INFO: TRAIN in episode 675 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:53:31, INFO: TRAIN in episode 676 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:53:39, INFO: TRAIN in episode 677 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:53:46, INFO: TRAIN in episode 678 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:53:54, INFO: TRAIN in episode 679 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:54:02, INFO: TRAIN in episode 680 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:54:10, INFO: TRAIN in episode 681 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:54:17, INFO: TRAIN in episode 682 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:54:25, INFO: TRAIN in episode 683 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:54:32, INFO: TRAIN in episode 684 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:54:35, INFO: TRAIN in episode 685 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.1055, loss: 8.86E-02
+2021-10-16 19:54:42, INFO: TRAIN in episode 686 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:54:49, INFO: TRAIN in episode 687 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:54:58, INFO: TRAIN in episode 688 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:55:05, INFO: TRAIN in episode 689 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:55:13, INFO: TRAIN in episode 690 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:55:21, INFO: TRAIN in episode 691 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:55:29, INFO: TRAIN in episode 692 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:55:36, INFO: TRAIN in episode 693 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:55:44, INFO: TRAIN in episode 694 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:55:52, INFO: TRAIN in episode 695 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:55:59, INFO: TRAIN in episode 696 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:56:06, INFO: TRAIN in episode 697 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:56:14, INFO: TRAIN in episode 698 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:56:21, INFO: TRAIN in episode 699 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:56:29, INFO: TRAIN in episode 700 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:56:36, INFO: TRAIN in episode 701 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0011, loss: 9.38E-02
+2021-10-16 19:56:44, INFO: TRAIN in episode 702 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:56:52, INFO: TRAIN in episode 703 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:57:00, INFO: TRAIN in episode 704 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:57:08, INFO: TRAIN in episode 705 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:57:16, INFO: TRAIN in episode 706 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:57:23, INFO: TRAIN in episode 707 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:57:30, INFO: TRAIN in episode 708 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:57:38, INFO: TRAIN in episode 709 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:57:46, INFO: TRAIN in episode 710 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:57:53, INFO: TRAIN in episode 711 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0011, loss: 9.35E-02
+2021-10-16 19:58:00, INFO: TRAIN in episode 712 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:58:08, INFO: TRAIN in episode 713 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:58:16, INFO: TRAIN in episode 714 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:58:23, INFO: TRAIN in episode 715 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:58:31, INFO: TRAIN in episode 716 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:58:38, INFO: TRAIN in episode 717 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:58:46, INFO: TRAIN in episode 718 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:58:53, INFO: TRAIN in episode 719 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:59:01, INFO: TRAIN in episode 720 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:59:09, INFO: TRAIN in episode 721 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:59:17, INFO: TRAIN in episode 722 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:59:24, INFO: TRAIN in episode 723 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:59:31, INFO: TRAIN in episode 724 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:59:39, INFO: TRAIN in episode 725 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:59:46, INFO: TRAIN in episode 726 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 19:59:53, INFO: TRAIN in episode 727 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:00:01, INFO: TRAIN in episode 728 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:00:08, INFO: TRAIN in episode 729 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:00:16, INFO: TRAIN in episode 730 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:00:24, INFO: TRAIN in episode 731 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:00:32, INFO: TRAIN in episode 732 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:00:40, INFO: TRAIN in episode 733 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:00:47, INFO: TRAIN in episode 734 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:00:54, INFO: TRAIN in episode 735 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:01:02, INFO: TRAIN in episode 736 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:01:10, INFO: TRAIN in episode 737 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:01:17, INFO: TRAIN in episode 738 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:01:25, INFO: TRAIN in episode 739 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:01:32, INFO: TRAIN in episode 740 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:01:39, INFO: TRAIN in episode 741 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:01:47, INFO: TRAIN in episode 742 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:01:54, INFO: TRAIN in episode 743 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:02:02, INFO: TRAIN in episode 744 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:02:09, INFO: TRAIN in episode 745 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:02:17, INFO: TRAIN in episode 746 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:02:24, INFO: TRAIN in episode 747 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:02:32, INFO: TRAIN in episode 748 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:02:39, INFO: TRAIN in episode 749 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:02:46, INFO: TRAIN in episode 750 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:02:54, INFO: TRAIN in episode 751 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:03:02, INFO: TRAIN in episode 752 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:03:10, INFO: TRAIN in episode 753 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:03:15, INFO: TRAIN in episode 754 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.0428, loss: 9.84E-02
+2021-10-16 20:03:23, INFO: TRAIN in episode 755 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:03:30, INFO: TRAIN in episode 756 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:03:38, INFO: TRAIN in episode 757 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:03:45, INFO: TRAIN in episode 758 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:03:52, INFO: TRAIN in episode 759 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0074, loss: 9.64E-02
+2021-10-16 20:04:00, INFO: TRAIN in episode 760 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:04:07, INFO: TRAIN in episode 761 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:04:15, INFO: TRAIN in episode 762 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:04:23, INFO: TRAIN in episode 763 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:04:31, INFO: TRAIN in episode 764 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:04:39, INFO: TRAIN in episode 765 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:04:46, INFO: TRAIN in episode 766 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:04:53, INFO: TRAIN in episode 767 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0301, loss: 1.02E-01
+2021-10-16 20:05:00, INFO: TRAIN in episode 768 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:05:07, INFO: TRAIN in episode 769 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:05:15, INFO: TRAIN in episode 770 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:05:23, INFO: TRAIN in episode 771 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:05:30, INFO: TRAIN in episode 772 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:05:38, INFO: TRAIN in episode 773 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:05:46, INFO: TRAIN in episode 774 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:05:54, INFO: TRAIN in episode 775 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:06:01, INFO: TRAIN in episode 776 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:06:09, INFO: TRAIN in episode 777 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:06:17, INFO: TRAIN in episode 778 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:06:24, INFO: TRAIN in episode 779 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0259, loss: 9.85E-02
+2021-10-16 20:06:32, INFO: TRAIN in episode 780 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:06:38, INFO: TRAIN in episode 781 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:06:46, INFO: TRAIN in episode 782 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:06:53, INFO: TRAIN in episode 783 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:07:01, INFO: TRAIN in episode 784 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:07:08, INFO: TRAIN in episode 785 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:07:16, INFO: TRAIN in episode 786 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:07:23, INFO: TRAIN in episode 787 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:07:30, INFO: TRAIN in episode 788 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:07:37, INFO: TRAIN in episode 789 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:07:44, INFO: TRAIN in episode 790 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:07:51, INFO: TRAIN in episode 791 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:07:59, INFO: TRAIN in episode 792 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:08:07, INFO: TRAIN in episode 793 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:08:14, INFO: TRAIN in episode 794 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:08:21, INFO: TRAIN in episode 795 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:08:29, INFO: TRAIN in episode 796 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:08:37, INFO: TRAIN in episode 797 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:08:44, INFO: TRAIN in episode 798 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:08:52, INFO: TRAIN in episode 799 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:09:00, INFO: TRAIN in episode 800 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:09:08, INFO: TRAIN in episode 801 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:09:15, INFO: TRAIN in episode 802 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:09:23, INFO: TRAIN in episode 803 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0023, loss: 9.39E-02
+2021-10-16 20:09:30, INFO: TRAIN in episode 804 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:09:38, INFO: TRAIN in episode 805 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:09:46, INFO: TRAIN in episode 806 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:09:53, INFO: TRAIN in episode 807 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:10:01, INFO: TRAIN in episode 808 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:10:09, INFO: TRAIN in episode 809 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:10:16, INFO: TRAIN in episode 810 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:10:24, INFO: TRAIN in episode 811 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:10:32, INFO: TRAIN in episode 812 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:10:39, INFO: TRAIN in episode 813 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:10:47, INFO: TRAIN in episode 814 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:10:55, INFO: TRAIN in episode 815 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:11:02, INFO: TRAIN in episode 816 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:11:09, INFO: TRAIN in episode 817 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0030, loss: 9.35E-02
+2021-10-16 20:11:17, INFO: TRAIN in episode 818 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:11:25, INFO: TRAIN in episode 819 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:11:27, INFO: TRAIN in episode 820 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.1021, loss: 8.90E-02
+2021-10-16 20:11:35, INFO: TRAIN in episode 821 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:11:42, INFO: TRAIN in episode 822 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:11:50, INFO: TRAIN in episode 823 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:11:58, INFO: TRAIN in episode 824 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:12:06, INFO: TRAIN in episode 825 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:12:14, INFO: TRAIN in episode 826 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:12:22, INFO: TRAIN in episode 827 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:12:29, INFO: TRAIN in episode 828 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:12:36, INFO: TRAIN in episode 829 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:12:44, INFO: TRAIN in episode 830 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:12:52, INFO: TRAIN in episode 831 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:13:00, INFO: TRAIN in episode 832 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:13:08, INFO: TRAIN in episode 833 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:13:16, INFO: TRAIN in episode 834 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:13:23, INFO: TRAIN in episode 835 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:13:31, INFO: TRAIN in episode 836 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:13:38, INFO: TRAIN in episode 837 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0096, loss: 9.46E-02
+2021-10-16 20:13:46, INFO: TRAIN in episode 838 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:13:53, INFO: TRAIN in episode 839 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:14:01, INFO: TRAIN in episode 840 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:14:08, INFO: TRAIN in episode 841 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:14:16, INFO: TRAIN in episode 842 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:14:23, INFO: TRAIN in episode 843 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0040, loss: 9.40E-02
+2021-10-16 20:14:31, INFO: TRAIN in episode 844 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:14:39, INFO: TRAIN in episode 845 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0001, loss: 9.35E-02
+2021-10-16 20:14:47, INFO: TRAIN in episode 846 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:14:54, INFO: TRAIN in episode 847 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:15:02, INFO: TRAIN in episode 848 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:15:10, INFO: TRAIN in episode 849 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0152, loss: 9.86E-02
+2021-10-16 20:15:17, INFO: TRAIN in episode 850 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:15:25, INFO: TRAIN in episode 851 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:15:32, INFO: TRAIN in episode 852 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:15:40, INFO: TRAIN in episode 853 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0082, loss: 9.60E-02
+2021-10-16 20:15:47, INFO: TRAIN in episode 854 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:15:55, INFO: TRAIN in episode 855 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:16:02, INFO: TRAIN in episode 856 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:16:10, INFO: TRAIN in episode 857 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:16:18, INFO: TRAIN in episode 858 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:16:25, INFO: TRAIN in episode 859 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:16:33, INFO: TRAIN in episode 860 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:16:40, INFO: TRAIN in episode 861 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:16:48, INFO: TRAIN in episode 862 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:16:56, INFO: TRAIN in episode 863 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:17:03, INFO: TRAIN in episode 864 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:17:11, INFO: TRAIN in episode 865 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:17:18, INFO: TRAIN in episode 866 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:17:26, INFO: TRAIN in episode 867 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:17:33, INFO: TRAIN in episode 868 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:17:41, INFO: TRAIN in episode 869 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:17:48, INFO: TRAIN in episode 870 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:17:56, INFO: TRAIN in episode 871 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:18:03, INFO: TRAIN in episode 872 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:18:11, INFO: TRAIN in episode 873 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:18:19, INFO: TRAIN in episode 874 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:18:27, INFO: TRAIN in episode 875 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0234, loss: 9.82E-02
+2021-10-16 20:18:34, INFO: TRAIN in episode 876 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:18:42, INFO: TRAIN in episode 877 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:18:47, INFO: TRAIN in episode 878 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.0650, loss: 1.02E-01
+2021-10-16 20:18:54, INFO: TRAIN in episode 879 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:19:02, INFO: TRAIN in episode 880 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:19:10, INFO: TRAIN in episode 881 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:19:18, INFO: TRAIN in episode 882 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0021, loss: 9.43E-02
+2021-10-16 20:19:25, INFO: TRAIN in episode 883 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:19:33, INFO: TRAIN in episode 884 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:19:41, INFO: TRAIN in episode 885 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:19:48, INFO: TRAIN in episode 886 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:19:56, INFO: TRAIN in episode 887 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0049, loss: 9.51E-02
+2021-10-16 20:20:04, INFO: TRAIN in episode 888 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:20:11, INFO: TRAIN in episode 889 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:20:19, INFO: TRAIN in episode 890 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:20:27, INFO: TRAIN in episode 891 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:20:27, INFO: TRAIN in episode 892 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2310, loss: 5.15E-02
+2021-10-16 20:20:35, INFO: TRAIN in episode 893 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:20:42, INFO: TRAIN in episode 894 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:20:50, INFO: TRAIN in episode 895 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:20:57, INFO: TRAIN in episode 896 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0130, loss: 9.56E-02
+2021-10-16 20:21:05, INFO: TRAIN in episode 897 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:21:12, INFO: TRAIN in episode 898 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:21:20, INFO: TRAIN in episode 899 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:21:27, INFO: TRAIN in episode 900 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:21:35, INFO: TRAIN in episode 901 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:21:43, INFO: TRAIN in episode 902 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:21:51, INFO: TRAIN in episode 903 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:21:59, INFO: TRAIN in episode 904 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:22:06, INFO: TRAIN in episode 905 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:22:14, INFO: TRAIN in episode 906 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:22:22, INFO: TRAIN in episode 907 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:22:30, INFO: TRAIN in episode 908 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:22:37, INFO: TRAIN in episode 909 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:22:45, INFO: TRAIN in episode 910 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:22:53, INFO: TRAIN in episode 911 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:23:01, INFO: TRAIN in episode 912 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:23:08, INFO: TRAIN in episode 913 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:23:16, INFO: TRAIN in episode 914 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:23:23, INFO: TRAIN in episode 915 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:23:30, INFO: TRAIN in episode 916 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:23:38, INFO: TRAIN in episode 917 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:23:46, INFO: TRAIN in episode 918 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:23:54, INFO: TRAIN in episode 919 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:24:01, INFO: TRAIN in episode 920 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:24:09, INFO: TRAIN in episode 921 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:24:16, INFO: TRAIN in episode 922 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0003, loss: 9.35E-02
+2021-10-16 20:24:24, INFO: TRAIN in episode 923 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:24:31, INFO: TRAIN in episode 924 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:24:38, INFO: TRAIN in episode 925 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:24:45, INFO: TRAIN in episode 926 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:24:53, INFO: TRAIN in episode 927 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:25:00, INFO: TRAIN in episode 928 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:25:08, INFO: TRAIN in episode 929 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:25:16, INFO: TRAIN in episode 930 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:25:24, INFO: TRAIN in episode 931 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:25:32, INFO: TRAIN in episode 932 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:25:40, INFO: TRAIN in episode 933 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:25:47, INFO: TRAIN in episode 934 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:25:55, INFO: TRAIN in episode 935 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:26:03, INFO: TRAIN in episode 936 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:26:11, INFO: TRAIN in episode 937 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:26:18, INFO: TRAIN in episode 938 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:26:26, INFO: TRAIN in episode 939 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:26:34, INFO: TRAIN in episode 940 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:26:42, INFO: TRAIN in episode 941 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:26:49, INFO: TRAIN in episode 942 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:26:57, INFO: TRAIN in episode 943 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:27:05, INFO: TRAIN in episode 944 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:27:12, INFO: TRAIN in episode 945 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:27:20, INFO: TRAIN in episode 946 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:27:27, INFO: TRAIN in episode 947 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:27:35, INFO: TRAIN in episode 948 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:27:43, INFO: TRAIN in episode 949 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:27:50, INFO: TRAIN in episode 950 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:27:57, INFO: TRAIN in episode 951 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:28:05, INFO: TRAIN in episode 952 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:28:13, INFO: TRAIN in episode 953 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:28:20, INFO: TRAIN in episode 954 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:28:28, INFO: TRAIN in episode 955 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:28:35, INFO: TRAIN in episode 956 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:28:42, INFO: TRAIN in episode 957 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:28:50, INFO: TRAIN in episode 958 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:28:58, INFO: TRAIN in episode 959 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:29:05, INFO: TRAIN in episode 960 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:29:13, INFO: TRAIN in episode 961 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:29:21, INFO: TRAIN in episode 962 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:29:28, INFO: TRAIN in episode 963 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:29:36, INFO: TRAIN in episode 964 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:29:44, INFO: TRAIN in episode 965 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:29:52, INFO: TRAIN in episode 966 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:29:59, INFO: TRAIN in episode 967 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:30:07, INFO: TRAIN in episode 968 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:30:14, INFO: TRAIN in episode 969 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:30:22, INFO: TRAIN in episode 970 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:30:29, INFO: TRAIN in episode 971 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:30:37, INFO: TRAIN in episode 972 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:30:45, INFO: TRAIN in episode 973 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:30:52, INFO: TRAIN in episode 974 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:31:00, INFO: TRAIN in episode 975 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0108, loss: 9.49E-02
+2021-10-16 20:31:07, INFO: TRAIN in episode 976 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:31:15, INFO: TRAIN in episode 977 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:31:23, INFO: TRAIN in episode 978 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:31:30, INFO: TRAIN in episode 979 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:31:38, INFO: TRAIN in episode 980 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:31:45, INFO: TRAIN in episode 981 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:31:53, INFO: TRAIN in episode 982 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:32:00, INFO: TRAIN in episode 983 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:32:08, INFO: TRAIN in episode 984 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:32:16, INFO: TRAIN in episode 985 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:32:23, INFO: TRAIN in episode 986 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:32:31, INFO: TRAIN in episode 987 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:32:39, INFO: TRAIN in episode 988 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:32:47, INFO: TRAIN in episode 989 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:32:54, INFO: TRAIN in episode 990 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:33:02, INFO: TRAIN in episode 991 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:33:09, INFO: TRAIN in episode 992 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:33:17, INFO: TRAIN in episode 993 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:33:25, INFO: TRAIN in episode 994 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:33:33, INFO: TRAIN in episode 995 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:33:40, INFO: TRAIN in episode 996 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:33:48, INFO: TRAIN in episode 997 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:33:56, INFO: TRAIN in episode 998 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:34:04, INFO: TRAIN in episode 999 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: 9.35E-02
+2021-10-16 20:34:11, INFO: TRAIN in episode 1000 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -0.0005, loss: 9.36E-02
+2021-10-16 20:34:11, DEBUG: findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0.
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Ubuntu' (Ubuntu-L.ttf) normal normal 300 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter-Oblique.ttf) oblique normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'KacstTitleL' (KacstTitleL.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'KacstLetter' (KacstLetter.ttf) normal normal 500 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'FreeMono' (FreeMonoBoldOblique.ttf) oblique normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Garuda' (Garuda-Oblique.ttf) oblique normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'ori1Uni' (utkal.ttf) normal normal 500 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Sawasdee' (Sawasdee-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Ubuntu' (Ubuntu-BI.ttf) italic normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'AnjaliOldLipi' (AnjaliOldLipi-Regular.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'FreeSans' (FreeSans.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'P052' (P052-Italic.otf) italic normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'URW Gothic' (URWGothic-BookOblique.otf) oblique normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Ubuntu' (Ubuntu-R.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Italic.ttf) italic normal 400 condensed>) = 11.25
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'KacstOne' (KacstOne.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Tlwg Typist' (TlwgTypist-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Z003' (Z003-MediumItalic.otf) italic normal 500 normal>) = 11.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Waree' (Waree-Oblique.ttf) oblique normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Gargi' (Gargi.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Laksaman' (Laksaman.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-Italic.ttf) italic normal 400 condensed>) = 11.25
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Uroob' (Uroob-Regular.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'URW Gothic' (URWGothic-DemiOblique.otf) oblique normal 600 normal>) = 11.24
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed.ttf) normal normal 400 condensed>) = 0.25
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Navilu' (Navilu.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-ExtraLight.ttf) normal normal 200 normal>) = 0.24
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Kinnari' (Kinnari-Italic.ttf) italic normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'URW Bookman' (URWBookman-Light.otf) normal normal 300 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Kinnari' (Kinnari-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'C059' (C059-Bold.otf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Rekha' (Rekha.ttf) normal normal 500 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Noto Serif CJK JP' (NotoSerifCJK-Black.ttc) normal normal 900 normal>) = 10.525
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Lohit Kannada' (Lohit-Kannada.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Nimbus Sans' (NimbusSans-Italic.otf) italic normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Gayathri' (Gayathri-Regular.otf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Sawasdee' (Sawasdee-Oblique.ttf) oblique normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'padmaa' (padmaa-Medium-0.5.ttf) normal normal 500 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'KacstDecorative' (KacstDecorative.ttf) normal normal 500 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-BI.ttf) italic normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Tlwg Mono' (TlwgMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'C059' (C059-Italic.otf) italic normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Loma' (Loma-Oblique.ttf) oblique normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Noto Mono' (NotoMono-Regular.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Noto Serif CJK JP' (NotoSerifCJK-Light.ttc) normal normal 300 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Laksaman' (Laksaman-Italic.ttf) italic normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'KacstPen' (KacstPen.ttf) normal normal 500 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Padauk' (Padauk-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Purisa' (Purisa.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Sawasdee' (Sawasdee.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Norasi' (Norasi-Oblique.ttf) oblique normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Khmer OS System' (KhmerOSsys.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Kinnari' (Kinnari-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'FreeSerif' (FreeSerifItalic.ttf) italic normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'padmaa' (padmaa.ttf) normal normal 500 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'URW Gothic' (URWGothic-Demi.otf) normal normal 600 normal>) = 10.24
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Samyak Devanagari' (Samyak-Devanagari.ttf) normal normal 500 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Kalimati' (kalimati.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Chilanka' (Chilanka-Regular.otf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Lohit Tamil Classical' (Lohit-Tamil-Classical.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Umpush' (Umpush-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Rasa' (Rasa-Regular.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Norasi' (Norasi-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Tibetan Machine Uni' (TibetanMachineUni.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Rasa' (Rasa-SemiBold.ttf) normal normal 600 normal>) = 10.24
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Nimbus Sans Narrow' (NimbusSansNarrow-Oblique.otf) oblique normal 400 condensed>) = 11.25
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Kinnari' (Kinnari-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Sawasdee' (Sawasdee-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Ubuntu' (Ubuntu-RI.ttf) italic normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'KacstQurn' (KacstQurn.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'FreeMono' (FreeMono.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Nimbus Sans Narrow' (NimbusSansNarrow-Bold.otf) normal normal 700 condensed>) = 10.535
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Nimbus Sans' (NimbusSans-Bold.otf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Medium.ttc) normal normal 500 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Manjari' (Manjari-Bold.otf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'KacstTitle' (KacstTitle.ttf) normal normal 500 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Bold.ttc) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Waree' (Waree-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Lohit Bengali' (Lohit-Bengali.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed.ttf) normal normal 400 condensed>) = 10.25
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Norasi' (Norasi-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Yrsa' (Yrsa-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'KacstNaskh' (KacstNaskh.ttf) normal normal 500 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'FreeSans' (FreeSansBold.ttf) normal normal 600 normal>) = 10.24
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'mry_KacstQurn' (mry_KacstQurn.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Umpush' (Umpush-Oblique.ttf) oblique normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Norasi' (Norasi.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Yrsa' (Yrsa-Light.ttf) normal normal 300 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'FreeSerif' (FreeSerifBoldItalic.ttf) italic normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Noto Serif CJK JP' (NotoSerifCJK-Medium.ttc) normal normal 500 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'FreeMono' (FreeMonoOblique.ttf) oblique normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Saab' (Saab.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'aakar' (aakar-medium.ttf) normal normal 500 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Norasi' (Norasi-Italic.ttf) italic normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Lohit Odia' (Lohit-Odia.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Chandas' (chandas1-2.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Phetsarath OT' (Phetsarath_OT.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'WenQuanYi Micro Hei' (wqy-microhei.ttc) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Gayathri' (Gayathri-Thin.otf) normal normal 100 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Umpush' (Umpush.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Loma' (Loma-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-RI.ttf) italic normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'FreeMono' (FreeMonoBold.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Padauk Book' (PadaukBook-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'padmaa-Bold.1.1' (padmaa-Bold.1.1.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'C059' (C059-BdIta.otf) italic normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'P052' (P052-Bold.otf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'KacstScreen' (KacstScreen.ttf) normal normal 500 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'LKLUG' (lklug.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Noto Serif CJK JP' (NotoSerifCJK-SemiBold.ttc) normal normal 600 normal>) = 10.24
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Ani' (ani.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Nimbus Mono PS' (NimbusMonoPS-Bold.otf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Regular.ttf) normal normal 400 condensed>) = 10.25
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Samanata' (samanata.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Garuda' (Garuda-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Tlwg Typist' (TlwgTypist-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-BoldOblique.ttf) oblique normal 700 condensed>) = 1.535
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Ubuntu' (Ubuntu-MI.ttf) italic normal 500 normal>) = 11.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Math TeX Gyre' (DejaVuMathTeXGyre.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Ubuntu' (Ubuntu-LI.ttf) italic normal 300 normal>) = 11.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Regular.ttc) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Loma' (Loma.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Mitra Mono' (mitra.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Padauk Book' (PadaukBook-Regular.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Gayathri' (Gayathri-Bold.otf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Ubuntu' (Ubuntu-M.ttf) normal normal 500 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Yrsa' (Yrsa-Regular.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Rachana' (Rachana-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'KacstOffice' (KacstOffice.ttf) normal normal 500 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Nimbus Sans' (NimbusSans-BoldItalic.otf) italic normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-DemiLight.ttc) normal normal 350 normal>) = 10.0975
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Vemana2000' (vemana2000.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Gubbi' (Gubbi.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Lohit Telugu' (Lohit-Telugu.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Rasa' (Rasa-Light.ttf) normal normal 300 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'KacstBook' (KacstBook.ttf) normal normal 500 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Tlwg Typo' (TlwgTypo-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'FreeSerif' (FreeSerif.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Nimbus Roman' (NimbusRoman-Bold.otf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Umpush' (Umpush-Light.ttf) normal normal 300 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Waree' (Waree-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'KacstPoster' (KacstPoster.ttf) normal normal 500 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Lohit Gurmukhi' (Lohit-Gurmukhi.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'AR PL UMing CN' (uming.ttc) normal normal 300 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Ubuntu' (Ubuntu-B.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Nimbus Sans Narrow' (NimbusSansNarrow-BoldOblique.otf) oblique normal 700 condensed>) = 11.535
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Pothana2000' (Pothana2000.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'URW Gothic' (URWGothic-Book.otf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-Oblique.ttf) oblique normal 400 condensed>) = 1.25
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'FreeSans' (FreeSansBoldOblique.ttf) oblique normal 600 normal>) = 11.24
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Nimbus Mono PS' (NimbusMonoPS-Regular.otf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'RaghuMalayalamSans' (RaghuMalayalamSans-Regular.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'FreeSerif' (FreeSerifBold.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Rasa' (Rasa-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'OpenSymbol' (opens___.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Sarai' (Sarai.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Purisa' (Purisa-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Ubuntu' (Ubuntu-Th.ttf) normal normal 250 normal>) = 10.1925
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Manjari' (Manjari-Regular.otf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Black.ttc) normal normal 900 normal>) = 10.525
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Yrsa' (Yrsa-Medium.ttf) normal normal 500 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Ubuntu Condensed' (Ubuntu-C.ttf) normal normal 400 condensed>) = 10.25
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Nimbus Sans' (NimbusSans-Regular.otf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-B.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Jamrul' (JamrulNormal.ttf) normal normal 500 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Standard Symbols PS' (StandardSymbolsPS.otf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'P052' (P052-Roman.otf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'KacstFarsi' (KacstFarsi.ttf) normal normal 500 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Padauk' (Padauk-Regular.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Rachana' (Rachana-Regular.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Noto Serif CJK JP' (NotoSerifCJK-ExtraLight.ttc) normal normal 200 normal>) = 10.24
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Lohit Gujarati' (Lohit-Gujarati.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'D050000L' (D050000L.otf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Nimbus Roman' (NimbusRoman-Italic.otf) italic normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Kinnari' (Kinnari.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Tlwg Mono' (TlwgMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Waree' (Waree.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Keraleeyam' (Keraleeyam-Regular.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Lohit Tamil' (Lohit-Tamil.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Tlwg Mono' (TlwgMono-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'AR PL UKai CN' (ukai.ttc) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Likhan' (LikhanNormal.ttf) normal normal 500 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Tlwg Typist' (TlwgTypist.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Tlwg Typist' (TlwgTypist-Oblique.ttf) oblique normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Dyuthi' (Dyuthi-Regular.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Nimbus Mono PS' (NimbusMonoPS-BoldItalic.otf) italic normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Lohit Devanagari' (Lohit-Devanagari.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Samyak Gujarati' (Samyak-Gujarati.ttf) normal normal 500 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Nimbus Roman' (NimbusRoman-Regular.otf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Nimbus Mono PS' (NimbusMonoPS-Italic.otf) italic normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Samyak Malayalam' (Samyak-Malayalam.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Thin.ttc) normal normal 100 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Noto Serif CJK JP' (NotoSerifCJK-Bold.ttc) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Tlwg Typo' (TlwgTypo-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Loma' (Loma-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Yrsa' (Yrsa-SemiBold.ttf) normal normal 600 normal>) = 10.24
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Tlwg Typo' (TlwgTypo.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Droid Sans Fallback' (DroidSansFallbackFull.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Nimbus Roman' (NimbusRoman-BoldItalic.otf) italic normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Purisa' (Purisa-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Mukti Narrow' (MuktiNarrow.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'KacstDigital' (KacstDigital.ttf) normal normal 500 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'C059' (C059-Roman.otf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Garuda' (Garuda.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Lohit Malayalam' (Lohit-Malayalam.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Sahadeva' (sahadeva.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Bold.ttf) normal normal 700 condensed>) = 10.535
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'KacstOne' (KacstOne-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Norasi' (Norasi-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Meera' (Meera-Regular.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'P052' (P052-BoldItalic.otf) italic normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Laksaman' (Laksaman-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Karumbi' (Karumbi-Regular.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'URW Bookman' (URWBookman-DemiItalic.otf) italic normal 600 normal>) = 11.24
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'URW Bookman' (URWBookman-Demi.otf) normal normal 600 normal>) = 10.24
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Samyak Tamil' (Samyak-Tamil.ttf) normal normal 500 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Tlwg Mono' (TlwgMono.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Tlwg Typo' (TlwgTypo-Oblique.ttf) oblique normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Purisa' (Purisa-Oblique.ttf) oblique normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Nakula' (nakula.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Kinnari' (Kinnari-Oblique.ttf) oblique normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Rasa' (Rasa-Medium.ttf) normal normal 500 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Mukti Narrow' (MuktiNarrowBold.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Pagul' (Pagul.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Abyssinica SIL' (AbyssinicaSIL-Regular.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'URW Bookman' (URWBookman-LightItalic.otf) italic normal 300 normal>) = 11.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Garuda' (Garuda-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-Bold.ttf) normal normal 700 condensed>) = 10.535
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'KacstArt' (KacstArt.ttf) normal normal 500 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Kalapi' (Kalapi.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Light.ttc) normal normal 300 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Manjari' (Manjari-Thin.otf) normal normal 100 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-Bold.ttf) normal normal 700 condensed>) = 0.5349999999999999
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Noto Serif CJK JP' (NotoSerifCJK-Regular.ttc) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Lohit Assamese' (Lohit-Assamese.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Suruma' (Suruma.ttf) normal normal 500 normal>) = 10.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Umpush' (Umpush-LightOblique.ttf) oblique normal 300 normal>) = 11.145
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Laksaman' (Laksaman-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Umpush' (Umpush-Bold.ttf) normal normal 700 normal>) = 10.335
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'FreeSans' (FreeSansOblique.ttf) oblique normal 400 normal>) = 11.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Nimbus Sans Narrow' (NimbusSansNarrow-Regular.otf) normal normal 400 condensed>) = 10.25
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-R.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: score(<Font 'Khmer OS' (KhmerOS.ttf) normal normal 400 normal>) = 10.05
+2021-10-16 20:34:11, DEBUG: findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/home/jia/anaconda3/envs/CrowdNav-master/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+2021-10-16 21:18:31, INFO: Done with training.

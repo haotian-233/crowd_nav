@@ -1,10 +1,23 @@
-2021-10-08 00:22:54, INFO: Current git head hash code: %s
-2021-10-08 00:22:54, INFO: Using device: cpu
-2021-10-08 00:22:54, INFO: Policy: LSTM-GA3C w/o pairwise interaction module
-2021-10-08 00:22:54, INFO: human number: 5
-2021-10-08 00:22:54, INFO: Not randomize human's radius and preferred speed
-2021-10-08 00:22:54, INFO: Training simulation: circle_crossing, test simulation: circle_crossing
-2021-10-08 00:22:54, INFO: Square width: 10.0, circle width: 4.0
-2021-10-08 00:22:54, INFO: Load imitation learning trained weights.
-2021-10-08 00:22:54, INFO: Agent is invisible and has holonomic kinematic constraint
-2021-10-08 00:22:54, INFO: Current learning rate: 0.001000
+2021-10-15 12:31:22, DEBUG: Popen(['git', 'cat-file', '--batch-check'], cwd=/home/jia/Documents/MasterProject/CrowdNav-master/crowd_nav, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-10-15 12:31:22, INFO: Current git head hash code: %s
+2021-10-15 12:31:22, INFO: Using device: cpu
+2021-10-15 12:31:22, INFO: Policy: LSTM-GA3C w/o pairwise interaction module
+2021-10-15 12:31:22, INFO: human number: 5
+2021-10-15 12:31:22, INFO: Not randomize human's radius and preferred speed
+2021-10-15 12:31:22, INFO: Training simulation: circle_crossing, test simulation: circle_crossing
+2021-10-15 12:31:22, INFO: Square width: 10.0, circle width: 4.0
+2021-10-15 12:31:22, INFO: Current learning rate: 0.010000
+2021-10-15 12:31:22, INFO: Orca_danger_dist: 1.00
+2021-10-15 12:31:22, INFO: Policy: ORCA_discrete without occupancy map
+2021-10-15 12:31:25, INFO: TRAIN has success rate: 0.50, collision rate: 0.30, nav time: 14.65, total reward: 0.0036
+2021-10-15 12:31:26, DEBUG: Average loss in epoch 0: 7.14E-03
+2021-10-15 12:31:27, DEBUG: Average loss in epoch 1: 6.89E-03
+2021-10-15 12:31:28, DEBUG: Average loss in epoch 2: 6.72E-03
+2021-10-15 12:31:28, DEBUG: Average loss in epoch 3: 6.63E-03
+2021-10-15 12:31:29, DEBUG: Average loss in epoch 4: 6.56E-03
+2021-10-15 12:31:29, INFO: Finish imitation learning. Weights saved.
+2021-10-15 12:31:29, INFO: Experience set size: 359/100000
+2021-10-15 12:31:29, INFO: Agent is invisible and has holonomic kinematic constraint
+2021-10-15 12:31:29, INFO: Current learning rate: 0.001000
+2021-10-15 12:31:34, INFO: TRAIN in episode 0 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: -1.93E-01
+2021-10-15 12:31:38, INFO: TRAIN in episode 1 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 0.0000, loss: -1.33E-01

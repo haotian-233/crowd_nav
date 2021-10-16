@@ -1,11 +1,12 @@
 import logging
 import copy
+# from operator import itemgetter
 import torch
 from crowd_sim.envs.utils.info import *
 import time
 
-import torch.nn.functional as F
-from crowd_sim.envs.utils.state import JointState
+# import torch.nn.functional as F
+# from crowd_sim.envs.utils.state import JointState
 # from crowd_sim.envs.utils.agent import get_full_state
 
 
@@ -23,8 +24,11 @@ class Explorer(object):
         self.target_model = copy.deepcopy(target_model)
 
     # @profile
-    def run_k_episodes(self, k, phase, update_memory=False, imitation_learning=False, episode=None,
-                       print_failure=False):
+    def run_k_episodes(self, k, phase, update_memory=False, imitation_learning=False, episode=None, print_failure=False, dynamic_obs=False):
+        if dynamic_obs:
+            logging.info('Dynamic Obstacle Set TRUE!')
+        else:
+            logging.info('Dynamic Obstacle Set FALSE!')
         self.robot.policy.set_phase(phase)
         success_times = []
         collision_times = []
@@ -40,86 +44,73 @@ class Explorer(object):
 
         # check model type
         # print("inside explorer: run k ep")
-        model = self.robot.policy.get_model()
+        model = self.target_policy
+        a2c_model = str(type(model)) == "<class 'crowd_nav.policy.lstm_ga3c.LstmGA3C'>"
+        a2c_t_model = str(type(model)) == "<class 'crowd_nav.policy.lstm_ga3c_t.LstmGA3C_t'>"
+        # check policy 
+        p = str(type(self.robot.policy))
+        orca_dis = p == "<class 'crowd_nav.policy.orca_discrete.ORCA_discrete'>"
 
-        a2c_model = str(type(model)) == "<class 'crowd_nav.policy.lstm_ga3c.A2CNet'>"
-        a2c_t_model = str(type(model)) == "<class 'crowd_nav.policy.lstm_ga3c_t.A2CNet'>"
+        update_action = False
+        if imitation_learning and orca_dis and (a2c_model or a2c_t_model):
+            update_action = True
+            logging.debug("update action set TRUE")
 
         for i in range(k):
-            ob = self.env.reset(phase)
+            if dynamic_obs and phase == 'train':
+                ob = self.env.reset1(phase)
+            else:
+                ob = self.env.reset(phase)
             done = False
             states = []
             actions = []
             rewards = []
-            old_policies = []
+            # old_policies = []
             # print("i, k:", i," ",k)
+            # c = 0
             while not done:
                 action = self.robot.act(ob)
                 ob, reward, done, info = self.env.step(action)
                 # print("state:")
                 # print(self.robot.policy.last_state)
-                # print("state end")
 
                 # get action idex
                 last_state = self.robot.policy.last_state
                 states.append(last_state)
                 rewards.append(reward)
-                # action_tensor = torch.zeros(len(self.robot.policy.action_space))
-                # action_tensor[idx] = 1
-                # print(idx)
-                # print(action_tensor)
-                # print(action_tensor.shape)
-                
-                
-                # compute next state
-                if a2c_model or a2c_t_model:
+                if update_action:
                     idx = self.robot.policy.action_space.index(action)
-                    actions.append(idx)                   
-                    next_state = JointState(self.robot.get_full_state(), ob)
-                    next_state = self.robot.policy.transform(next_state)
-                # print(next_state)
-                # print(next_state.shape) # [human num 5,13]
-
-                # print(actions)
-                
-                # print(rewards)
-                # print(states)
-
-                if (a2c_model or a2c_t_model) and (phase == "train") :
-                    input = self.robot.policy.last_state.unsqueeze(0)
-                    # print(input)
-                    # print(input.shape)
-                    probs, V = model(input) # values shape [100,1]
-                    # print(logits)
-                    # print(logits.shape)
-                    # probs = F.softmax(logits.detach(), dim=1)
-                    old_policies.append(probs)
-                    
+                    # actions.append(idx)
+                    action_tensor = torch.zeros(len(self.robot.policy.action_space))
+                    action_tensor[idx] = 1
+                    actions.append(action_tensor)                 
 
                 if isinstance(info, Danger):
                     too_close += 1
                     min_dist.append(info.min_dist)
+                
 
             if isinstance(info, ReachGoal):
                 success += 1
                 success_times.append(self.env.global_time)
-            elif isinstance(info, Collision):
+            elif isinstance(info, Collision):                
+                # print("collision")
                 collision += 1
                 collision_cases.append(i)
                 collision_times.append(self.env.global_time)
             elif isinstance(info, Timeout):
+                # print("timeout")
                 timeout += 1
                 timeout_cases.append(i)
                 timeout_times.append(self.env.time_limit)
             else:
                 raise ValueError('Invalid end signal from environment')
-
+            # print("done loop",c)
             if update_memory:
                 if isinstance(info, ReachGoal) or isinstance(info, Collision):
-                    # only add positive(success) or negative(collision) experience in experience set
-                    
-                    if a2c_model or a2c_t_model:
-                        self.a2c_update_memory(states, actions, rewards, old_policies, next_state ,imitation_learning)
+                    # only add positive(success) or negative(collision) experience in experience set                
+                    if update_action:
+                        self.a2c_update_memory(states, actions, rewards)
                     else:
                         self.update_memory(states, actions, rewards, imitation_learning)
 
@@ -277,16 +268,9 @@ class Explorer(object):
             # if human_num != 5:
             #     padding = torch.zeros((5 - human_num, feature_size))
             #     state = torch.cat([state, padding])
-
-            # debug
-            # print("inside explorer, update mem")
-            # print(state)
-            # print(state.shape) #[human_num 5, joint_state_dim 13] tensor
-            # print(value)
-            # print(value.shape) #[1] tensor
             self.memory.push((state, value))
 
-    def a2c_update_memory(self, states, actions, rewards, old_policies, terminal_state ,imitation_learning=False):
+    def a2c_update_memory(self, states, actions, rewards):
         if self.memory is None or self.gamma is None:
             raise ValueError('Memory or gamma value is not set!')
         # print("inside explorer: update a2c mem")
@@ -294,44 +278,32 @@ class Explorer(object):
         for i, state in enumerate(states):
             reward = rewards[i]
             action = actions[i]
-            policy = old_policies[i]
-
-            self.memory.append(state, action, reward, policy)
-        
-        self.memory.append(terminal_state, None, None, None)
-
-        
-        # print(self.memory.length())
-            # ++++++ old code block below +++++
+        #     policy = old_policies[i]
+        #     self.memory.append(state, action, reward, policy)      
+        # self.memory.append(terminal_state, None, None, None)
+     
             # VALUE UPDATE
-            # if imitation_learning:
-            #     # define the value of states in IL as cumulative discounted rewards, which is the same in RL
-            #     state = self.target_policy.transform(state)
-            #     # value = pow(self.gamma, (len(states) - 1 - i) * self.robot.time_step * self.robot.v_pref)
-            #     value = sum([pow(self.gamma, max(t - i, 0) * self.robot.time_step * self.robot.v_pref) * reward
-            #                  * (1 if t >= i else 0) for t, reward in enumerate(rewards)])
-            # else:
-            #     if i == len(states) - 1:
-            #         # terminal state
-            #         value = reward
-            #     else:
-            #         next_state = states[i + 1]
-            #         gamma_bar = pow(self.gamma, self.robot.time_step * self.robot.v_pref)
-            #         # branch
-            #         value = reward + gamma_bar * self.target_model(next_state.unsqueeze(0))[1].data.item()
-            # value = torch.Tensor([value]).to(self.device)
+            
+            # define the value of states in IL as cumulative discounted rewards, which is the same in RL
+            state = self.target_policy.transform(state)
+            # value = pow(self.gamma, (len(states) - 1 - i) * self.robot.time_step * self.robot.v_pref)
+            value = sum([pow(self.gamma, max(t - i, 0) * self.robot.time_step * self.robot.v_pref) * reward
+                            * (1 if t >= i else 0) for t, reward in enumerate(rewards)])
+            
+            value = torch.Tensor([value]).to(self.device)
+            action = torch.Tensor(action).to(self.device)
+            item = torch.cat((value, action),0)
+            # print(state)
+            # print(type(state))
+            # print(action)
+            # print(type(action))
+            # print(value)
+            # print(type(value))
+            # print(item)
+            # print(type(item))
 
-            # # # transform state of different human_num into fixed-size tensor
-            # # if len(state.size()) == 1:
-            # #     human_num = 1
-            # #     feature_size = state.size()[0]
-            # # else:
-            # #     human_num, feature_size = state.size()
-            # # if human_num != 5:
-            # #     padding = torch.zeros((5 - human_num, feature_size))
-            # #     state = torch.cat([state, padding])
-
-            # self.memory.push((state, value))
+            
+            self.memory.push((state, item))
 
 def average(input_list):
     if input_list:

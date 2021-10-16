@@ -1,0 +1,10 @@
+2021-10-09 22:22:14, INFO: Current git head hash code: %s
+2021-10-09 22:22:14, INFO: Using device: cpu
+2021-10-09 22:22:14, INFO: Policy: LSTM-GA3C w/o pairwise interaction module
+2021-10-09 22:22:14, INFO: human number: 5
+2021-10-09 22:22:14, INFO: Not randomize human's radius and preferred speed
+2021-10-09 22:22:14, INFO: Training simulation: circle_crossing, test simulation: circle_crossing
+2021-10-09 22:22:14, INFO: Square width: 10.0, circle width: 4.0
+2021-10-09 22:22:14, INFO: Load reinforcement learning trained weights. Resume training
+2021-10-09 22:22:14, INFO: Agent is invisible and has holonomic kinematic constraint
+2021-10-09 22:22:14, INFO: Current learning rate: 0.001000

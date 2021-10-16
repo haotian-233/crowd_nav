@@ -1,0 +1,15 @@
+2021-10-16 23:41:49, DEBUG: Popen(['git', 'cat-file', '--batch-check'], cwd=/home/jia/Documents/MasterProject/CrowdNav-master/crowd_nav, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-10-16 23:41:49, INFO: Current git head hash code: %s
+2021-10-16 23:41:50, INFO: Using device: cpu
+2021-10-16 23:41:50, INFO: Policy: LSTM-GA3C w/o pairwise interaction module
+2021-10-16 23:41:50, INFO: human number: 5
+2021-10-16 23:41:50, INFO: Not randomize human's radius and preferred speed
+2021-10-16 23:41:50, INFO: Training simulation: circle_crossing, test simulation: circle_crossing
+2021-10-16 23:41:50, INFO: Square width: 10.0, circle width: 4.0
+2021-10-16 23:41:50, INFO: Current learning rate: 0.010000
+2021-10-16 23:41:50, INFO: Orca_danger_dist: 1.00
+2021-10-16 23:41:50, INFO: Policy: ORCA_discrete without occupancy map
+2021-10-16 23:41:50, INFO: Dynamic Obstacle Set FALSE!
+2021-10-16 23:41:50, DEBUG: update action set TRUE
+2021-10-16 23:44:39, INFO: TRAIN has success rate: 0.61, collision rate: 0.19, nav time: 15.16, total reward: 0.0679
+2021-10-16 23:44:49, DEBUG: Average loss in epoch 0: 1.30E-03

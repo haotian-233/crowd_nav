@@ -94,10 +94,13 @@ class A2CNet(nn.Module):
 
         self.policy_net = nn.Sequential(
           nn.Linear(self.self_state_dim + lstm_hidden_dim, 150),
+        #   nn.BatchNorm1d(150),
           nn.ReLU(),
           nn.Linear(150, 100),
+        #   nn.BatchNorm1d(100),
           nn.ReLU(),
           nn.Linear(100, 100),
+        #   nn.BatchNorm1d(100),
           nn.ReLU(),
           nn.Linear(100, action_dim)
         )
@@ -156,7 +159,7 @@ class A2CNet(nn.Module):
 
 
         # add new output Q, change critic net to predict Q value instead
-        probs = F.softmax(logits, dim=1).clamp(max=1 - 1e-20)  # Prevent 1s and hence NaNs
+        probs = F.softmax(logits, dim=1).clamp(min = 1e-20,max=1 - 1e-20)  # Prevent 1s and hence NaNs
         # V = (Q * probs).sum(1, keepdim=True) # V is expectation of Q under π
 
         return probs, values
@@ -255,8 +258,8 @@ class LstmGA3C_t(MultiHumanRL):
             if max_action is None:
                 raise ValueError('Value network is not well trained. ')
 
-        if self.phase == 'train':
-            self.last_state = self.transform(state)
+        # if self.phase == 'train':
+        self.last_state = self.transform(state)
 
         # print("inside model, predict")
         # print(self.phase)

@@ -32,7 +32,9 @@ class A2c_Trainer(object):
         self.output_dir = output_dir
 
         self.evaluation_interval = evaluation_interval
-        self.case_size = None
+        # self.case_size = None
+        self.k = 1
+        self.phase = None
 
 
     def set_learning_rate(self, learning_rate):
@@ -42,6 +44,7 @@ class A2c_Trainer(object):
 
 
     def a2c_run(self, train_episode, phase, episode=None, resume=False, dynamic_obs=False):
+        self.phase = phase
         # check evaluation 
         # if episode % self.evaluation_interval == 0:
         #     phase == 'val'
@@ -82,12 +85,17 @@ class A2c_Trainer(object):
 
         while episode <= train_episode:
             # set phase
-            if episode % self.evaluation_interval == 0:
-                phase == 'val'
-                self.case_size = self.env.case_size['val']
+            if self.phase == 'test':
+                self.k = self.env.case_size['test']
+                logging.debug("FINAL TEST")
+            elif episode % self.evaluation_interval == 0 and episode!=0:
+                self.phase = 'val'
+                # self.case_size = self.env.case_size['val']
+                self.k = self.env.case_size['val']
             else:
-                phase == 'train'
-            self.robot.policy.set_phase(phase)
+                self.phase = 'train'
+                self.k = 1
+            self.robot.policy.set_phase(self.phase)
 
             # for each episode
             if episode < self.epsilon_decay:
@@ -108,135 +116,159 @@ class A2c_Trainer(object):
             collision_cases = []
             timeout_cases = []
             
-            if dynamic_obs:
-                ob = self.env.reset1(phase)
-            else:
-                ob = self.env.reset(phase)
-            # ob = self.env.reset(phase)
-            done = False
-
-            rewards = []
-            log_probs = []
-            values = []
-            # print("episode, train_episode:", episode," ",train_episode)
-            step = 0
-            while not done:
-                action = self.robot.act(ob)
-                ob, reward, done, info = self.env.step(action)
-                input = self.robot.policy.last_state.unsqueeze(0)
-                
-                prob, V = self.model(input)
-                value = V.detach().numpy()[0,0]
-                dist = prob.detach().numpy()
-                # print(prob.shape)
-
-                action_idx = self.robot.policy.action_space.index(action)
-                log_prob = torch.log(prob.squeeze(0)[action_idx])
-                entropy = -np.sum(np.mean(dist) * np.log(dist))
-                # print(prob)
-                # print(type(prob))
-                # print(prob.shape)
-                # print(V)
-                # print(type(V))
-                # print(V.shape)
-                step += 1
-
-                # states.append(last_state)
-                rewards.append(reward)
-                values.append(value)
-                log_probs.append(log_prob)
-                entropy_term += entropy
-                                 
-
-                if isinstance(info, Danger):
-                    too_close += 1
-                    min_dist.append(info.min_dist)
-                
-            if isinstance(info, ReachGoal):
-                success += 1
-                success_times.append(self.env.global_time)
-            elif isinstance(info, Collision):                
-                # print("collision")
-                collision += 1
-                collision_cases.append(episode)
-                collision_times.append(self.env.global_time)
-            elif isinstance(info, Timeout):
-                # print("timeout")
-                timeout += 1
-                timeout_cases.append(episode)
-                timeout_times.append(self.env.time_limit)
-            else:
-                raise ValueError('Invalid end signal from environment')
-            # print("done loop",step)
+            # k episode loop 
+            for i in range(self.k):
             
+                if dynamic_obs and self.phase == 'train':
+                    ob = self.env.reset1(self.phase)
+                else:
+                    ob = self.env.reset(self.phase)
+                # ob = self.env.reset(phase)
+                done = False
 
-            if phase == 'train':
-                # optimize this episode if in train phase
-                next_state = JointState(self.robot.get_full_state(), ob)
-                next_state = self.robot.policy.transform(next_state)
-                # action = self.robot.act(ob)
-                input = next_state.unsqueeze(0)                
-                _, Qval = self.model(input)
-                Qval = Qval.detach().numpy()[0,0]
+                rewards = []
+                log_probs = []
+                values = []
+                # print("episode, train_episode:", episode," ",train_episode)
+                step = 0
+                # ac_loss = 0
+                while not done:
+                    action = self.robot.act(ob)
+                    ob, reward, done, info = self.env.step(action)
+                    input = self.robot.policy.last_state.unsqueeze(0)
+                    
+                    prob, V = self.model(input)
+                    value = V.detach().numpy()[0,0]
+                    dist = prob.detach().numpy()
+                    # print(prob.shape)
 
-                # compute Q value
-                Qvals = np.zeros_like(values)  # returns an array of given shape and type as given array, with zeros.
-                for t in reversed(range(len(rewards))):
-                    Qval = rewards[t] + self.gamma * Qval
-                    Qvals[t] = Qval
+                    action_idx = self.robot.policy.action_space.index(action)
 
-                # update actor crtic
-                values = torch.FloatTensor(values)
-                Qvals = torch.FloatTensor(Qvals)
-                log_probs = torch.stack(log_probs)
+                    p = prob.squeeze(0)[action_idx]
+                    # print('inside a2c trainer')
+                    # print(p)
+                    # print(type(p))
+                    # x = torch.log(torch.Tensor([1e-9]).squeeze(0))
+                    # x = 
+                    # print(x)
+                    # print(type(x))
+                    # temp =torch.from_numpy(np.array(1e-9)).double() 
+                    # print(temp)
+                    # print(type(temp))
+                    # print(torch.DoubleTensor([1e-9]))
+                    log_prob = torch.log(p)
+                    entropy = -np.sum(np.mean(dist) * np.log(dist))
+                    # print(dist)
+                    # print(type(prob))
+                    # print(prob.shape)
+                    # print(V)
+                    # print(type(V))
+                    # print(V.shape)
+                    step += 1
 
-                advantage = Qvals - values
-                actor_loss = (-log_probs * advantage).mean()
-                critic_loss = 0.5 * advantage.pow(2).mean()
-                ac_loss = actor_loss + critic_loss + 0.001 * entropy_term
+                    # states.append(last_state)
+                    rewards.append(reward)
+                    values.append(value)
+                    log_probs.append(log_prob)
+                    entropy_term += entropy
+                                    
 
-                self.optimizer.zero_grad()
-                ac_loss.backward()
-                self.optimizer.step()    
+                    if isinstance(info, Danger):
+                        too_close += 1
+                        min_dist.append(info.min_dist)
+                    
+                if isinstance(info, ReachGoal):
+                    success += 1
+                    success_times.append(self.env.global_time)
+                elif isinstance(info, Collision):                
+                    # print("collision")
+                    collision += 1
+                    collision_cases.append(i)
+                    collision_times.append(self.env.global_time)
+                elif isinstance(info, Timeout):
+                    # print("timeout")
+                    timeout += 1
+                    timeout_cases.append(i)
+                    timeout_times.append(self.env.time_limit)
+                else:
+                    raise ValueError('Invalid end signal from environment')
+                # print("done loop",step)
+                
 
-                # get some data
-                all_rewards.append(np.sum(rewards))
-                all_lengths.append(step)
-                average_lengths.append(np.mean(all_lengths[-10:]))
+                if self.phase == 'train':
+                    # optimize this episode if in train phase
+                    next_state = JointState(self.robot.get_full_state(), ob)
+                    next_state = self.robot.policy.transform(next_state)
+                    # action = self.robot.act(ob)
+                    input = next_state.unsqueeze(0)                
+                    _, Qval = self.model(input)
+                    Qval = Qval.detach().numpy()[0,0]
 
-                # old code
-                cumulative_rewards.append(sum([pow(self.gamma, t * self.robot.time_step * self.robot.v_pref)* reward for t, reward in enumerate(rewards)]))
+                    # compute Q value
+                    Qvals = np.zeros_like(values)  # returns an array of given shape and type as given array, with zeros.
+                    for t in reversed(range(len(rewards))):
+                        Qval = rewards[t] + self.gamma * Qval
+                        Qvals[t] = Qval
+
+                    # update actor crtic
+                    values = torch.FloatTensor(values)
+                    Qvals = torch.FloatTensor(Qvals)
+                    # print(log_probs)
+                    log_probs = torch.stack(log_probs)
+                    print(log_probs)
+
+                    advantage = Qvals - values
+                    actor_loss = (-log_probs * advantage).mean()
+                    critic_loss = 0.5 * advantage.pow(2).mean()
+                    ac_loss = actor_loss + critic_loss #+ 0.001 * entropy_term
+
+                    self.optimizer.zero_grad()
+                    ac_loss.backward()
+
+                    torch.nn.utils.clip_grad_norm(self.model.parameters(), 10)
+
+                    self.optimizer.step()    
+
+                    # get some data
+                    all_rewards.append(np.sum(rewards))
+                    all_lengths.append(step)
+                    average_lengths.append(np.mean(all_lengths[-10:]))
+
+                    # old code
+                    cumulative_rewards.append(sum([pow(self.gamma, t * self.robot.time_step * self.robot.v_pref)* reward for t, reward in enumerate(rewards)]))
 
                 # save data for unknow disruptive error, overwrite everytime
-                if episode % self.checkpoint_interval == 0:
+                if i==0 and episode!=0 and episode % self.checkpoint_interval == 0:
                     key_data = [all_lengths, average_lengths, all_rewards, entropy_term]
                     data_path = os.path.join(self.output_dir,'key_data.data')
                     with open(data_path, 'wb') as f:
                         # store the data as binary data stream
                         pickle.dump(key_data, f)
                         logging.debug('saved memory to: {}'.format(data_path))
-            # debug
-            # for name, param in self.model.named_parameters():
-            #     if param.requires_grad:
-            #         print(name, param.data)
+                # debug
+                # for name, param in self.model.named_parameters():
+                #     if param.requires_grad:
+                #         print(name, param.data)
 
-            
+                
             # after 1 episode
-            # success_rate = success / train_episode
-            # collision_rate = collision / train_episode
-            assert success + collision + timeout == 1
+            success_rate = success / self.k
+            collision_rate = collision / self.k
+            assert success + collision + timeout == self.k
             avg_nav_time = sum(success_times) / len(success_times) if success_times else self.env.time_limit
 
             extra_info = '' if episode is None else 'in episode {} '.format(episode)
-            logging.info('{:<5} {}has success rate: {:.2f}, collision rate: {:.2f}, nav time: {:.2f}, total reward: {:.4f}, loss: {:.2E}'.
-                        format(phase.upper(), extra_info, success, collision, avg_nav_time,
-                                average(cumulative_rewards), ac_loss.data.item()))
-            if phase in ['val', 'test']:
+            logging.info('{:<5} {}has success rate: {:.2f}, collision rate: {:.2f}, nav time: {:.2f}, total reward: {:.4f}, k: {:d}'.
+                        format(self.phase.upper(), extra_info, success_rate, collision_rate, avg_nav_time,
+                                average(cumulative_rewards), self.k))
+            if self.phase == 'train':
+                logging.info('ac_loss: {:.2E}, actor_loss: {:.2E}, critic_loss: {:.2E}, entropy: {:.2E}, entropy_term: {:.2E}, log_probS: {:.2E}, adv: {:.2E}'.format(ac_loss.data.item(),actor_loss.data.item(),critic_loss.data.item(),entropy, entropy_term, log_probs.mean().data.item(), advantage.mean().data.item()))
+            if self.phase in ['val', 'test']:
                 num_step = sum(success_times + collision_times + timeout_times) / self.robot.time_step
                 logging.info('Frequency of being in danger: %.2f and average min separate distance in danger: %.2f',
                             too_close / num_step, average(min_dist))
             
-            if phase == 'train':
+            if self.phase != 'test':
                 # end of episode loop control operations
                 
                 # save checkpoints
@@ -248,7 +280,7 @@ class A2c_Trainer(object):
                     logging.info('saved model to: {}'.format(file_name) )
                 
             episode += 1
-        if phase == 'train':
+        if self.phase != 'test' and episode>=train_episode:
             # save all key data for further analysis of data
             smoothed_rewards = pd.Series.rolling(pd.Series(all_rewards), 10).mean() # sliding window avg of size 10
             smoothed_rewards = [i for i in smoothed_rewards]

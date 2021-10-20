@@ -4,6 +4,7 @@ import numpy as np
 import logging
 from crowd_nav.policy.cadrl import mlp
 from crowd_nav.policy.multi_human_rl import MultiHumanRL
+from my_utils import process_state
 
 from crowd_sim.envs.utils.action import ActionRot, ActionXY
 import torch.nn.functional as F
@@ -74,10 +75,10 @@ class ValueNetwork2(nn.Module):
         return value
 
 
-class A2CNet(nn.Module):
+class DQNNet(nn.Module):
     def __init__(self, action_dim, lstm_hidden_dim = 50):
         super().__init__()
-
+        self.device = 'cpu'
         self.self_state_dim = 6
         self.human_state_dim = 7
         self.joint_input_dim = self.self_state_dim + self.human_state_dim
@@ -93,26 +94,17 @@ class A2CNet(nn.Module):
 
         self.policy_net = nn.Sequential(
           nn.Linear(self.self_state_dim + lstm_hidden_dim, 150),
+        #   nn.BatchNorm1d(150),
           nn.ReLU(),
           nn.Linear(150, 100),
+        #   nn.BatchNorm1d(100),
           nn.ReLU(),
           nn.Linear(100, 100),
+        #   nn.BatchNorm1d(100),
           nn.ReLU(),
           nn.Linear(100, action_dim)
         )
         self.policy_net.apply(init_weights)
-
-        # value net
-        self.value_net = nn.Sequential(
-          nn.Linear(self.self_state_dim + lstm_hidden_dim, 150),
-          nn.ReLU(),
-          nn.Linear(150, 100),
-          nn.ReLU(),
-          nn.Linear(100, 100),
-          nn.ReLU(),
-          nn.Linear(100, 1)
-        )
-        self.value_net.apply(init_weights)
 
         # lstm 
         self.lstm = nn.LSTM(self.human_state_dim, lstm_hidden_dim, batch_first=True)
@@ -124,26 +116,42 @@ class A2CNet(nn.Module):
         '''
         state shape: [batch_size, human_number (0 is self), input_dim = joint_state_dim + 0]
         '''
-
+        # print("inside lstm_dqn_t")
         size = state.shape
-        # print("size")
-        # print(size)
         self_state = state[:, 0, :self.self_state_dim]
+
+        # begin est collision time
+        state_temp = torch.zeros(size, dtype=torch.float, device=self.device)
+        for i in range(size[0]):
+            self_state_temp = state[i, 0, :self.self_state_dim]
+            humans_state_temp = state[i, :, :]  # self.self_state_dim
+            state_t = process_state(self_state_temp, humans_state_temp)
+            state_t = torch.tensor(state_t).to(self.device)
+            state_temp[i] = state_t
+
+        human_state = state_temp[:, :, self.self_state_dim:]
+        # end 
+        
         h0 = torch.zeros(1, size[0], self.lstm_hidden_dim)
         c0 = torch.zeros(1, size[0], self.lstm_hidden_dim)
 
+        # print(human_state.shape)
+        # print("proper shape:")
         # print(state[:,1:,-self.human_state_dim:].shape)
-        output, (hn, cn) = self.lstm(state[:,:,-self.human_state_dim:], (h0, c0))
+        output, (hn, cn) = self.lstm(human_state, (h0, c0))
+        # output, (hn, cn) = self.lstm(state[:,1:,-self.human_state_dim:], (h0, c0))
         hn = hn.squeeze(0)
         joint_state = torch.cat([self_state, hn], dim=1)
-        values = self.value_net(joint_state)
-        logits = self.policy_net(joint_state)
+        Qs = self.policy_net(joint_state)
 
-        probs = F.softmax(logits, dim=1).clamp(min = 1e-20, max=1 - 1e-20)  # Prevent 1s and hence NaNs
+        # print(Qs)
+        # add new output Q, change critic net to predict Q value instead
+        # probs = F.softmax(logits, dim=1).clamp(min = 1e-20,max=1 - 1e-20)  # Prevent 1s and hence NaNs
+        # V = (Q * probs).sum(1, keepdim=True) # V is expectation of Q under π
 
-        return probs, values
+        return Qs
 
-class LstmGA3C(MultiHumanRL):
+class LstmDQN_t(MultiHumanRL):
     def __init__(self):
         super().__init__()
         self.name = 'LSTM-GA3C'
@@ -158,8 +166,8 @@ class LstmGA3C(MultiHumanRL):
         with_interaction_module = config.getboolean('lstm_ga3c', 'with_interaction_module')
 
         # set model
-        self.model = A2CNet(81,lstm_hidden_dim=50)
-        print("class LstmGA3C: a2c net loaded.")
+        self.model = DQNNet(81,lstm_hidden_dim=50)
+        print("class LstmDQN_t: dqn_t net loaded.")
         # if with_interaction_module:
         #     mlp1_dims = [int(x) for x in config.get('lstm_ga3c', 'mlp1_dims').split(', ')]
         #     self.model = ValueNetwork2(self.input_dim(), self.self_state_dim, mlp1_dims, mlp_dims, global_state_dim)
@@ -203,42 +211,58 @@ class LstmGA3C(MultiHumanRL):
             self.build_action_space(state.self_state.v_pref)
             # len(self.action_space)
 
+
+        self.last_state = self.transform(state)
+
         occupancy_maps = None
         probability = np.random.random()
         if self.phase == 'train' and probability < self.epsilon:
             max_action = self.action_space[np.random.choice(len(self.action_space))]
         else:
-            self.action_values = list()
-            max_value = float('-inf')
+            # self.action_values = list()
+            # max_value = float('-inf')
             max_action = None
-            for action in self.action_space:
-                next_self_state = self.propagate(state.self_state, action)
-                if self.query_env:
-                    next_human_states, reward, done, info = self.env.onestep_lookahead(action)
-                else:
-                    next_human_states = [self.propagate(human_state, ActionXY(human_state.vx, human_state.vy))
-                                       for human_state in state.human_states]
-                    reward = self.compute_reward(next_self_state, next_human_states)
-                batch_next_states = torch.cat([torch.Tensor([next_self_state + next_human_state]).to(self.device)
-                                              for next_human_state in next_human_states], dim=0)
-                rotated_batch_input = self.rotate(batch_next_states).unsqueeze(0)
-                if self.with_om:
-                    if occupancy_maps is None:
-                        occupancy_maps = self.build_occupancy_maps(next_human_states).unsqueeze(0)
-                    rotated_batch_input = torch.cat([rotated_batch_input, occupancy_maps.to(self.device)], dim=2)
-                # VALUE UPDATE
-                # print(self.model(rotated_batch_input)[1])
-                next_state_value = self.model(rotated_batch_input)[1].data.item()
-                value = reward + pow(self.gamma, self.time_step * state.self_state.v_pref) * next_state_value
-                self.action_values.append(value)
-                if value > max_value:
-                    max_value = value
-                    max_action = action
-            if max_action is None:
-                raise ValueError('Value network is not well trained. ')
+            actions = self.model.forward(self.last_state.unsqueeze(0))
+            action_idx = torch.argmax(actions).item()
+            max_action = self.action_space[action_idx]
+            # print(max_action)
 
-        if self.phase == 'train':
-            self.last_state = self.transform(state)
+
+
+            # for action in self.action_space:
+            #     next_self_state = self.propagate(state.self_state, action)
+            #     if self.query_env:
+            #         next_human_states, reward, done, info = self.env.onestep_lookahead(action)
+            #     else:
+            #         next_human_states = [self.propagate(human_state, ActionXY(human_state.vx, human_state.vy))
+            #                            for human_state in state.human_states]
+            #         reward = self.compute_reward(next_self_state, next_human_states)
+            #     batch_next_states = torch.cat([torch.Tensor([next_self_state + next_human_state]).to(self.device)
+            #                                   for next_human_state in next_human_states], dim=0)
+            #     rotated_batch_input = self.rotate(batch_next_states).unsqueeze(0)
+            #     if self.with_om:
+            #         if occupancy_maps is None:
+            #             occupancy_maps = self.build_occupancy_maps(next_human_states).unsqueeze(0)
+            #         rotated_batch_input = torch.cat([rotated_batch_input, occupancy_maps.to(self.device)], dim=2)
+            #     # VALUE UPDATE
+            #     print(self.model(rotated_batch_input))
+            #     sstop
+            #     next_state_value = self.model(rotated_batch_input).data.item()
+            #     value = reward + pow(self.gamma, self.time_step * state.self_state.v_pref) * next_state_value
+            #     self.action_values.append(value)
+            #     if value > max_value:
+            #         max_value = value
+            #         max_action = action
+            # if max_action is None:
+            #     raise ValueError('Value network is not well trained. ')
+
+        # if self.phase == 'train':
+        # self.last_state = self.transform(state)
+
+        # print("inside model, predict")
+        # print(self.phase)
+        # print(state)
+        # print(self.last_state)
 
         # print(max_action) # ActionXY(vx=-0.38268343236509034, vy=-0.9238795325112865)
         # print(type(max_action)) # <class 'crowd_sim.envs.utils.action.ActionXY'>
